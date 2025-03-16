@@ -71,6 +71,58 @@ Y.~Hu, M.~Liyanage, A.~Mansoor, K.~Thilakarathna, G.~Jourjon, and A.~P.
   \url{https://api.semanticscholar.org/CorpusID:182952419}
 \BIBentrySTDinterwordspacing
 
+\bibitem{valov2020home}
+N.~Valov and I.~Valova, ``Home automation system with raspberry pi,'' in
+  \emph{2020 7th International Conference on Energy Efficiency and Agricultural
+  Engineering (EE\&AE)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2020, pp.
+  1--5.
+
+\bibitem{li2010application}
+L.~Li, Y.~Chen, J.~Liu \emph{et~al.}, ``The application of hall sensors acs712
+  in the protection circuit of controller for humanoid robots,'' in \emph{2010
+  International Conference on Computer Application and System Modeling (ICCASM
+  2010)}, vol.~12.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp.
+  V12--101.
+
+\bibitem{Khair_2017}
+\BIBentryALTinterwordspacing
+U.~Khair, A.~J. Lubis, I.~Agustha, Dharmawati, and M.~Zulfin, ``Modeling and
+  simulation of electrical prevenion system using arduino uno,gsm modem, and
+  acs712 current sensor,'' \emph{Journal of Physics: Conference Series}, vol.
+  930, no.~1, p. 012049, dec 2017. [Online]. Available:
+  \url{https://dx.doi.org/10.1088/1742-6596/930/1/012049}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Dout199927V41}
+C.~Dout, ``2.7v 4-channel/8-channel 12-bit a/d converters with spi
+  {\textregistered} serial interface,'' 1999.
+
+\bibitem{Flurry2021}
+\BIBentryALTinterwordspacing
+G.~Flurry, \emph{An Analog-to-Digital Converter}.\hskip 1em plus 0.5em minus
+  0.4em\relax Berkeley, CA: Apress, 2021, pp. 397--412. [Online]. Available:
+  \url{https://doi.org/10.1007/978-1-4842-7264-0_12}
+\BIBentrySTDinterwordspacing
+
+\bibitem{muller2015using}
+L.~M{\"u}ller, M.~Mohammed, and J.~W. Kimball, ``Using the arduino uno to teach
+  digital control of power electronics,'' in \emph{2015 IEEE 16th Workshop on
+  Control and Modeling for Power Electronics (COMPEL)}.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE, 2015, pp. 1--8.
+
+\bibitem{Taufiq_2020}
+\BIBentryALTinterwordspacing
+A.~J. Taufiq, I.~H. Kurniawan, and T.~A.~Y. Nugraha, ``Analysis of arduino uno
+  application on control system based on industrial scale,'' \emph{IOP
+  Conference Series: Materials Science and Engineering}, vol. 771, no.~1, p.
+  012015, mar 2020. [Online]. Available:
+  \url{https://dx.doi.org/10.1088/1757-899X/771/1/012015}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Naimi2017TheAM}
+S.~Naimi, S.~Naimi, and M.~A. Mazidi, ``The avr microcontroller and embedded
+  systems using assembly and c: Using arduino uno and atmel studio,'' 2017.
+
 \bibitem{estrin1999next}
 D.~Estrin, R.~Govindan, J.~Heidemann, and S.~Kumar, ``Next century challenges:
   Scalable coordination in sensor networks,'' in \emph{Proceedings of the 5th

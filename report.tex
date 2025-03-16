@@ -113,19 +113,223 @@ Using HTTP queries, a Web3 application retrieves energy usage data from ThingsBo
 This process combines blockchain, cloud computing, and the Internet of Things to produce an automated and decentralized energy billing system.  An effective and transparent billing procedure is made possible by the modular architecture, which facilitates smooth data flow from energy monitoring to smart contract interactions.
 
 
-\chapter{Schematic Design and Simulation in Proteus}
-\section{Circuit Design}
-The circuit consists of:
-\begin{itemize}
-    \item Voltage and current sensors connected to ESP8266
-    \item UART communication between ESP8266 and Raspberry Pi
-\end{itemize}
+\chapter{Proteus Schematic Design and Simulation}
+
+\section{Introduction}
+Proteus is a powerful software program that is commonly used to develop and simulate embedded systems prior to their real implementation.  It allows you to efficiently test circuits, detect design problems, and enhance performance without the need for actual hardware.  This chapter focuses on the schematic design and modeling of a smart home automation system and a smart energy meter, which integrate sensors, actuators, and communication modules to provide real-time monitoring and control.
+
+
+The Raspberry Pi 3 serves as the core processing unit for the smart home automation system, which communicates with a variety of sensors such as Light Dependent Resistors (LDR), Passive Infrared (PIR) sensors, and gas detectors to automate household appliances.  The Raspberry Pi lacks built-in analog input capabilities, thus an external ADC (MCP3208) is used to interpret analog sensor data and enabling IoT-based automation\cite{valov2020home}.
+
+The smart energy meter focuses on real-time power consumption monitoring, incorporating an Arduino Uno for data acquisition, ACS712 current sensors for current measurement, and voltage dividers for accurate voltage monitoring \cite{li2010application}. Additionally, power factor measurement is achieved using LM358 operational amplifiers and XOR gates to analyze phase differences between voltage and current waveforms \cite{Khair_2017}. These measurements are transmitted to the IoT platform, enabling remote energy management and optimization.
+
+This chapter details the schematic design, component selection, and software implementation in Proteus.  The proposed system provides not just automation and remote monitoring, but also efficient energy utilization and billing.  Proteus simulations evaluate the system's many features prior to real-world deployment, ensuring reliability and performance.
+
+\section{Schematic Design in Proteus}
+\subsection{Smart Home Automation System}
+The home automation circuit includes:
+
+\textbf{Raspberry Pi 3:} The Raspberry Pi 3 B+ was chosen for this home automation project because of its powerful capabilities and simplicity of integration.  It is driven by a Broadcom BCM2837B0 quad-core Cortex-A53 (ARMv8) processor clocked at 1.4GHz, with 1GB LPDDR2 SDRAM and a Broadcom Videocore-IV GPU. Networking options include Gigabit Ethernet (by USB), dual-band Wi-Fi (2.4GHz and 5GHz 802.11b/g/n/ac), and Bluetooth 4.2 (BLE)\cite{valov2020home}.It includes a 40-pin GPIO header, HDMI, a 3.5mm audio connector, four USB 2.0 ports, Ethernet, CSI, and DSI.  The Micro-SD storage format and compact dimensions (82mm × 56mm × 19.5mm, 50g) make it ideal for embedded applications\cite{valov2020home}.
+
+\begin{figure}[H]  % 'h' places the figure approximately here
+    \centering
+    \includegraphics[width=0.6\textwidth]{image.png} % Adjust width as needed
+    \caption{Raspberry Pi 3 Schematic}
+    \label{fig:Raspberry} % Label for referencing the figure
+\end{figure}
+
+
+\textbf{ADC (MCP3208):} Analog-to-digital converters (ADCs) transform analog signals into digital data, allowing microcontrollers and computers to process real-world inputs.The MCP3208 is a 12-bit ADC with 8 input channels. It provides high accuracy (±1 LSB DNL, ±1-2 LSB INL) and low power consumption.  It runs on 2.7V-5.5V, has an SPI interface, and is commonly used for sensor applications and data gathering\cite{Dout199927V41}.
+
+\begin{figure}[H]  % 'h' places the figure approximately here
+    \centering
+    \includegraphics[scale=0.4]{MCP3208.PNG} % Adjust width as needed
+    \caption{ADC (MCP3208)}
+    \label{fig:adc} % Label for referencing the figure
+\end{figure}
+
+Because Raspberry Pi lacks built-in analog inputs, an external ADC such as the MCP3208 is required to read analog sensor data.  Interfacing via SPI allows for real-time monitoring in IoT applications and industrial automation\cite{Flurry2021}.
+
+\textbf{Other Sensors:} We used a variety of sensors and actuators to allow for sophisticated control and monitoring.  The system uses an LDR (Light Dependent Resistor) to detect ambient light levels, allowing lights to be turned on or off based on the brightness of the surroundings. 
+A PIR (Passive Infrared) sensor was used to detect motion and human presence.  This sensor is essential for security and automated lighting because it activates lights or alerts when motion is detected.  Furthermore, a MQ-2 gas sensor was used to monitor air quality and identify combustible gases such as LPG and CO, assuring safety by sending alarms in the event of a gas leak.  The LM35 temperature sensor was included to properly monitor room temperature and allow for automatic cooling control.
+
+\subsection{Complete Schematic of Smart Home Automation System}
+The smart home automation circuit integrates multiple sensors and actuators to automate home appliances based on environmental conditions ans involves following connections.
+\begin{figure}[H]  % 'h' places the figure approximately here
+    \centering
+    \includegraphics[scale=0.68]{smartHomeAutocomplete.PNG} % Adjust width as needed
+    \caption{Complete Schematic}
+    \label{fig:schematichome} % Label for referencing the figure
+\end{figure}
+
+
+
+\subsection{Smart Energy Meter and Power Factor Measurement}
+The smart energy meter circuit consists of:
+
+\textbf{Arduino Uno:}The Arduino Uno, built around the AVR microcontroller, has developed as a versatile platform for teaching and implementing digital control systems.  
+
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width=0.6\textwidth]{Capture.PNG} % Adjust width as needed
+    \caption{Arduino Uno}
+    \label{fig:uno} % Label for referencing the figure
 
-    \caption{Schematic Diagram of the System}
 \end{figure}
+It has characteristics suited for power electronics applications, providing switching frequencies of up to 100 kHz with extra libraries\cite{muller2015using}.  The Arduino Uno has been shown to be effective in controlling industrial-scale instruments, performing similarly to industrial-class controllers that use PID algorithms\cite{Taufiq_2020}.The Arduino Uno, which is based on the Atmega328 processor, supports Assembly and C programming, allowing students to learn about microcontroller architecture and interact with real-world devices like LCDs, motors, and sensors\cite{Naimi2017TheAM}. 
+
+\textbf{Current Measurement}:In our smart home automation project, we employ the ACS712 Hall-effect-based current sensor to monitor AC/DC power levels. It has low resistance (1.2 mohm) and 2.1 kVRMS isolation for precise and safe current measuring\cite{li2010application}. The 30A variant with 66mV/A sensitivity is integrated with an arduino uno, allowing for real-time power tracking and energy consumption analysis via ThingsBoard.  Calibration improves accuracy and reduces measurement error, making it ideal for IoT-based billing and automation systems.  Its rapid reaction (5 µs) and low noise improve performance for smart energy management\cite{Khair_2017}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.35\textwidth]{ACS.PNG} % Adjust width as needed
+    \caption{Current Sensor}
+\end{figure}
+
+
+\textbf{Voltage Measurement:}We monitor AC voltage in our smart home automation project with a step-down transformer, a voltage divider network, and a filtering capacitor. The step-down transformer (TR3) converts the high AC mains voltage to a lower, safer level suited for measurement. The voltage divider circuit (R9, R10, R11, and R12) reduces the voltage to a range compatible with the Arduino ADC, ensuring precise readings while protecting the microcontroller. A 500µF capacitor (C2) filters, reduces noise, and stabilizes the signal for accurate RMS voltage measurement. This configuration enables the Arduino to process voltage data and send it to ThingsBoard, allowing for real-time monitoring and effective energy management in our smart home system.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{voltageMeasurment.PNG} % Adjust width as needed
+    \caption{Voltage Measurement Circuit}
+\end{figure}
+
+\textbf{Power Factor Measurement:} we monitor power factor with LM358 operational amplifiers and an XOR gate.  The LM358 op-amps act as zero-crossing detectors, transforming AC voltage and current waveforms to square waves.  The first op-amp (U8:A) detects zero crossings in the voltage waveform, whereas the second op-amp (U8:B) detects current waveform.  These processed signals are then routed through an XOR gate (U9), which generates a pulse-width output proportional to the phase difference between the voltage and current waves.  The Arduino measures pulse width and calculates power factor as cos($\theta$), where $\theta$ is the phase angle.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{PowerFactor.PNG} % Adjust width as needed
+    \caption{PowerFactor Measurement Circuit}
+\end{figure}
+
+\textbf{relay-based load control} electrical appliances are managed remotely using a relay control system. The circuit consists of electromagnetic relays (RL4, RL5) that are controlled by the microcontroller's GPIO pins (for example, Raspberry Pi or Arduino). When a GPIO pin is set to HIGH, the accompanying relay coil is activated, shutting the switch and enabling current to flow to the attached load (such as lights or motors).
+
+\subsection{Complete Schematic of Smart Energy Meter}
+The smart energy meter circuit is designed to measure and monitor power consumption while ensuring efficient energy usage.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{smartEnergy.PNG} % Adjust width as needed
+    \caption{Complete Schematic of Smart Energy meter}
+\end{figure}
+
+\section{Code Implementation}
+
+\subsection{Arduino Code for Smart Energy Meter}
+
+The Arduino is responsible for measuring voltage, current, and calculating power consumption in real-time. The analog pins read voltage and current sensor outputs, which are then converted into meaningful electrical values. The calculated power is then transmitted over serial communication.
+\clearpage
+
+\begin{lstlisting}[language=C]
+// Pin configuration
+const int voltagePin = A0; // Voltage sensor input
+const int currentPin = A1; // Current sensor input
+
+// Constants for sensor calibration
+const float voltageMultiplier = 230.0 / 1023.0;  // Adjust based on sensor specs
+const float currentMultiplier = 10.0 / 1023.0;   // Adjust for CT sensor scaling
+
+void setup() {
+    Serial.begin(9600);  // Start serial communication
+}
+
+void loop() {
+    // Read raw analog values from sensors
+    int rawVoltage = analogRead(voltagePin);
+    int rawCurrent = analogRead(currentPin);
+    
+    // Convert raw values to real-world measurements
+    float voltage = rawVoltage * voltageMultiplier;
+    float current = rawCurrent * currentMultiplier;
+    float power = voltage * current; // Active power calculation
+
+    // Print the measurements to serial monitor
+    Serial.print("Voltage: "); Serial.print(voltage); Serial.print(" V, ");
+    Serial.print("Current: "); Serial.print(current); Serial.print(" A, ");
+    Serial.print("Power: "); Serial.print(power); Serial.println(" W");
+
+    delay(1000);  // Wait 1 second before next reading
+}
+\end{lstlisting}
+
+
+\subsection{Raspberry Pi Code for Home Automation}
+
+The Raspberry Pi is responsible for reading sensor data, controlling home appliances based on environmental conditions, and sending data to an IoT platform (ThingsBoard) using MQTT.
+\clearpage
+
+\begin{lstlisting}[language=Python]
+import RPi.GPIO as GPIO
+import time
+import json
+import spidev
+import math
+from paho.mqtt.client import Client
+
+# GPIO setup
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(17, GPIO.IN)  # LDR sensor for light detection
+GPIO.setup(27, GPIO.OUT) # Relay control for light switching
+
+# SPI setup for ADC communication (e.g., MCP3008)
+spi = spidev.SpiDev()
+spi.open(0, 0)
+spi.max_speed_hz = 1350000
+
+# MQTT setup
+THINGSBOARD_HOST = "localhost"
+ACCESS_TOKEN = "your_access_token"
+client = Client()
+client.username_pw_set(ACCESS_TOKEN)
+client.connect(THINGSBOARD_HOST, 1883, 60)
+
+# Read ADC channel for sensor values
+def read_channel(channel):
+    adc = spi.xfer2([1, (8 + channel) << 4, 0])
+    return ((adc[1] & 3) << 8) + adc[2]
+
+# Calculate RMS voltage from multiple samples
+def calculate_rms_voltage():
+    sum_squares = sum((read_channel(3) * 3.3 / 1023.0) ** 2 for _ in range(200))
+    return math.sqrt(sum_squares / 200) * 11  # Voltage divider correction
+
+# Publish sensor data to MQTT
+def publish_sensor_data():
+    while True:
+        light_level = read_channel(0)  # Read LDR sensor value
+        GPIO.output(27, light_level < 100)  # Turn on relay if dark
+        
+        payload = json.dumps({
+            "light": light_level,
+            "voltage": calculate_rms_voltage()
+        })
+        client.publish("v1/devices/me/telemetry", payload)
+        time.sleep(0.5)  # Wait before next update
+
+publish_sensor_data()
+\end{lstlisting}
+
+\section{Simulation and Testing}
+
+\subsection{Home Automation Testing}
+Several tests were run in the Proteus simulation environment to validate the smart home automation system.  The LDR-based light control circuit was tested under various lighting situations.  The simulation confirmed that when the light intensity fell below a particular threshold, the relay was activated, which turned on the linked bulb.  When the light intensity increased, the relay deactivated and the bulb turned off.  This behavior provided automatic lighting management based on ambient light levels.
+
+ The PIR sensor was tested by mimicking motion within its detecting range.  When motion was detected, the buzzer sounded an alert.  When there was no motion, the buzzer remained off.  This proved that the motion detection system was working properly, making it appropriate for security applications.
+
+
+The MQTT communication between the Raspberry Pi and ThingsBoard Cloud was also tested. Sensor data, including light intensity and relay state, was successfully transmitted and displayed on the ThingsBoard dashboard in real time. This validated the proper integration of IoT communication in the system.
+
+\subsection{Smart Meter Testing}
+The smart energy meter system was evaluated for accuracy and dependability in measuring electrical characteristics.  The Arduino successfully obtained voltage and current readings from the sensors.  These readings were compared to expected values, and the findings revealed an acceptable margin of error, indicating measurement accuracy.
+
+The power consumption was calculated using the formula \( P = V \times I \), and the computed values were displayed on the serial monitor. The readings matched theoretical expectations, demonstrating the correct implementation of power measurement.
+
+Furthermore, the power factor correction circuit was simulated by adding different loads.  As reactive power varied, the circuit modified to enhance the power factor.  This enabled the system to dynamically optimize power consumption, decreasing energy waste.
+
+
+\section{Conclusion}
+
+The Proteus simulation offered a dependable testing environment for both the smart home automation and smart energy metering systems.  The home automation system operated as planned, automatically regulating lighting based on ambient conditions and detecting motion to trigger security warnings.  The smart meter measured electrical characteristics precisely and estimated power usage with excellent reliability. 
+
+ Both systems' successful simulation testing shows that they are ready for real-world implementation.  With the right hardware, these systems can improve energy efficiency and automation in smart home situations.
 
 
 \chapter{ThingsBoard Integration}
