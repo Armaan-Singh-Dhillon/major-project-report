@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex report"] 1742128005.3199 "report.aux" "report.bbl" "report" 1742128009.33466 0
+["bibtex report"] 1742183791.48665 "report.aux" "report.bbl" "report" 1742183817.70056 0
   "./references.bib" 1742127959 20024 2c7cf77eeb3ff141167aef4375a24f27 ""
   "A:/MIKTEX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "report.aux" 1742128008 14996 7b85106f505da83f260b358f275fedc1 "pdflatex"
+  "report.aux" 1742183816 18299 089a5e7fd54971f8d552ac008edd1b9b "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1742128005.70687 "c:/Users/armaan/Desktop/major project report/report.tex" "report.pdf" "report" 1742128009.33551 0
+["pdflatex"] 1742183812.10548 "c:/Users/armaan/Desktop/major project report/report.tex" "report.pdf" "report" 1742183817.70142 0
   "A:/MIKTEX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "A:/MIKTEX/fonts/tfm/jknappen/ec/tctt1000.tfm" 993062564 1284 ebe6f6da538d21a08b8f29b6479c4f22 ""
   "A:/MIKTEX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -114,16 +114,29 @@
   "MCP3208.PNG" 1742123427 22637 237b435a1a865a22df4ad17f552f91b0 ""
   "PowerFactor.PNG" 1742125394 23806 039ac5bd2185f54e929f97121ab86b81 ""
   "basicArchitecture.png" 1742039334 230084 916ad09553e3cd7a3ebb0f7b827c4b6b ""
-  "c:/Users/armaan/Desktop/major project report/report.tex" 1742127996 56861 6d6f32350f3d6ea9a162b58e538281f3 ""
+  "c:/Users/armaan/Desktop/major project report/report.tex" 1742183810 61766 133645f95517472c600acf3cd08e77ef ""
+  "chain.PNG" 1742180392 163788 f632df2419b7c698001459ae9a359801 ""
+  "contract creation.PNG" 1742180542 10399 3894a8f03c74e93b70a9b790dbf4b292 ""
+  "dashboard1.PNG" 1742180751 156172 0795fef76c044b94c3ce2e5c33e3e9c3 ""
+  "dashboard2.PNG" 1742180782 61535 6163b32d1f29a70c58eb95715583657f ""
+  "device Details.PNG" 1742180829 52257 ab69bf330e26f9bd686ffbb27d9c382d ""
+  "device creation.PNG" 1742181772 27350 110d00b18de47054566c53758ec2e82a ""
+  "docker container.PNG" 1742183739 66307 a97561cc092628d98568981299b7f002 ""
+  "frontend Logs.PNG" 1742181187 13910 fad7d093e37c22c6c7b0355da7a69a8f ""
+  "gas price.PNG" 1742182480 54965 fe7c1f9b1d4b5a630862e6e750ece110 ""
+  "home.PNG" 1742180673 193795 6d811510ef1b0b803d53f20dc610992f ""
   "image.png" 1742121940 84343 b9087e150e5ab299a653c2847165bbae ""
-  "report.aux" 1742128008 14996 7b85106f505da83f260b358f275fedc1 "pdflatex"
-  "report.bbl" 1742128005 12243 6f71a055c527cdf9b414b2c059996664 "bibtex report"
-  "report.out" 1742128008 14174 228c83813b91eaf95ae368873e1ad59f "pdflatex"
-  "report.tex" 1742127996 56861 6d6f32350f3d6ea9a162b58e538281f3 ""
-  "report.toc" 1742128008 6624 6e8ac3f4038095803757be1f82c67e6d "pdflatex"
+  "remix ide.PNG" 1742182432 107383 f58a2c84f83be3aa37a6e31b51184b51 ""
+  "report.aux" 1742183816 18299 089a5e7fd54971f8d552ac008edd1b9b "pdflatex"
+  "report.bbl" 1742183791 12243 6f71a055c527cdf9b414b2c059996664 "bibtex report"
+  "report.out" 1742183816 14718 eb0d0f0241eec11047886c291f1db8ba "pdflatex"
+  "report.tex" 1742183810 61766 133645f95517472c600acf3cd08e77ef ""
+  "report.toc" 1742183816 6836 5442df69f914a3a46759db9c6797e4ff "pdflatex"
   "smartEnergy.PNG" 1742126316 34840 c37d8f6908d44b1bfe246ca53252fbde ""
   "smartHomeAutocomplete.PNG" 1742126524 62886 ded18455dc9ae165dbc75c704f04fed5 ""
+  "trasnsactions.PNG" 1742180434 145788 49c0e0a9781c9eda3e2f1b138cdb4088 ""
   "voltageMeasurment.PNG" 1742124983 26383 aa085af31e3636ae6bd6a6b4f3cd1f58 ""
+  "web3 App.PNG" 1742181161 30422 ea5391d3420c121e5e50e0cc2583e967 ""
   (generated)
   "report.aux"
   "report.log"

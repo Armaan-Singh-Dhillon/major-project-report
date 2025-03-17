@@ -341,12 +341,23 @@ One of ThingsBoard's key features is the ability to build rules and plugins for 
 
  ThingsBoard allows you to configure alerts for both devices and assets, which improves real-time monitoring and event-based automation.  When aberrant situations are recognized, these alerts alert users or initiate automated replies.  Furthermore, the platform supports both lightweight communication protocols, such as MQTT and CoAP, and classic RESTful services\cite{shelby2014rfc}. 
 
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{home.PNG}
+    \caption{ThingsBoard's Home}
+ \end{figure}
+
  \section{Prerequisites for ThingsBoard MQTT Integration}
 
- Before integrating ThingsBoard with MQTT, ensure that the required software components are installed and configured correctly. The ThingsBoard platform must be running on either a local system or a cloud server. Although ThingsBoard has a built-in MQTT broker, an external broker such as Mosquitto can also be used if needed. 
-
+ Before integrating ThingsBoard with MQTT, ensure that the required software components are installed and configured correctly. The ThingsBoard platform must be running on either a local system or a cloud server. Although ThingsBoard has a built-in MQTT broker, an external broker such as Mosquitto can also be used if needed.Each device must first be created in ThingsBoard before it can communicate via MQTT. To create a new device, navigate to the ThingsBoard dashboard, go to the \textbf{Devices} section, and click on \textbf{Add New Device}. Assign a meaningful name and select the appropriate device type. Once the device is created, an \textbf{Access Token} is generated, which will be required for authentication in MQTT communication. A visual representation of the device creation process is shown in Figure~\ref{fig:device_creation}. Additionally, MQTT communication requires appropriate network settings. Ensure that port \textbf{1883} is open for unencrypted communication. Each device must authenticate with ThingsBoard using an \textbf{Access Token}, which is assigned when the device is created in ThingsBoard.
  
- Additionally, MQTT communication requires appropriate network settings. Ensure that port \textbf{1883} is open for unencrypted communication. Each device must authenticate with ThingsBoard using an \textbf{Access Token}, which is assigned when the device is created in ThingsBoard.
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.35\textwidth]{device creation.PNG}
+    \caption{Device creation process in ThingsBoard}
+    \label{fig:device_creation}
+ \end{figure}
+
  
  \section{Connecting ThingsBoard with MQTT}
  
@@ -382,15 +393,35 @@ One of ThingsBoard's key features is the ability to build rules and plugins for 
  Once connected, sensor data must be prepared in JSON format and published to the ThingsBoard MQTT topic. The following code snippet demonstrates how to send temperature and humidity data.
  
  \begin{lstlisting}
- telemetry_data = {"temperature": 25.5, "humidity": 60}
+ telemetry_data = {"current": 14.919, "fan_status": 0,"gas_detected":0,"light":61,"motion":1,"power":3493.48,"power_factor":0.98,"temperature":27.85}
  client.publish("v1/devices/me/telemetry", json.dumps(telemetry_data))
  print("Data sent successfully!")
  client.disconnect()
  \end{lstlisting}
+
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{device Details.PNG}
+    \caption{Latest Telemetry after Publishing Data}
+ \end{figure}
  
  \subsection{Step 5: Verify Data in ThingsBoard}
  After publishing the data, it is essential to verify whether ThingsBoard has received it. This can be done by navigating to the ThingsBoard UI and checking the \textbf{Latest Telemetry} section of the configured device.
 
+ \subsection{Step 6:Creation of Dashboard in ThingsBoard}
+ After creating a device in ThingsBoard, the next step is to create a dashboard for monitoring and visualization. To create a new dashboard, navigate to the \textbf{Dashboards} section and click on \textbf{Create New Dashboard}. Provide a meaningful name and description for easy identification.
+
+ Once the dashboard is created, widgets can be added to visualize device telemetry data. Click on \textbf{Edit Dashboard}, then use the \textbf{Add New Widget} option to select an appropriate widget type, such as charts, gauges, or tables. Link the widget to the corresponding device and telemetry keys. The dashboard creation process is illustrated in Figure~\ref{fig:dashboard_creation2}.
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{dashboard2.PNG}
+ \end{figure}
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{dashboard1.PNG}
+    \caption{Dashboard Creation with ThingsBoard Widgets}
+    \label{fig:dashboard_creation2}
+ \end{figure}
  \section{Prerequisites for ThingsBoard API Integration}
  
  Before integrating ThingsBoard with the API, ensure that the required software and authentication mechanisms are set up properly. The ThingsBoard platform must be installed on a local system or a cloud server to facilitate communication. A REST client such as Postman or the \texttt{fetch} API in JavaScript is necessary for interacting with ThingsBoard’s API. Additionally, proper network access should be configured to allow API requests.
@@ -513,14 +544,28 @@ Initially, blockchain was largely utilized for peer-to-peer financial transactio
  This contract allows users to store their energy consumption, calculate their bill, and make payments. It ensures security and automation of energy billing transactions.
  
  \section{Ethereum and Gas Estimation}
- Ethereum is a decentralized platform for smart contract execution.  It uses Ether (ETH), the network's currency.  To execute a smart contract, users must pay gas fees, which are used to compensate miners for their computational efforts.  Gas costs vary depending on network congestion and contract complexity.
-
- Each operation in Solidity has a distinct gas cost.  For example, keeping data on-chain costs more than doing calculations.  Gas estimate assists developers in optimizing contracts by identifying operations that use an excessive amount of gas.  Tools such as Remix IDE and Ethereum testnets have gas estimation functionality to increase contract efficiency.
-
-
+ Ethereum is a decentralized platform for smart contract execution. It uses Ether (ETH), the network's currency. To execute a smart contract, users must pay gas fees, which compensate miners for their computational efforts. Gas costs vary depending on network congestion and contract complexity.
+ 
+ Each operation in Solidity has a distinct gas cost. For example, storing data on-chain is more expensive than performing computations. Gas estimation helps developers optimize contracts by identifying operations that consume excessive gas. Tools such as Remix IDE and Ethereum testnets provide gas estimation functionality to improve contract efficiency. A visual representation of gas estimation in Remix IDE is shown in Figure~\ref{fig:gas_estimation}.
+ 
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=1\textwidth]{gas price.PNG}
+ \caption{Gas Tracker for Ethereum Sepolia}
+ \label{fig:gas_estimation}
+ \end{figure}
  
  \section{Remix IDE and Smart Contract Deployment}
- Remix IDE is an online development environment for creating, building, deploying, and debugging smart contracts.  It has a straightforward interface and built-in Solidity compiler support, allowing developers to write and test contracts smoothly.  Remix also supports gas estimation, transaction debugging, and integration with Ethereum testnets.  Developers can use Remix to efficiently deploy smart contracts, simulate transactions, and optimize gas usage before deploying them to the Ethereum mainnet.
+ Remix IDE is an online development environment for creating, building, deploying, and debugging smart contracts. It features a user-friendly interface and built-in Solidity compiler support, allowing developers to write and test contracts efficiently.
+ 
+ Remix also supports gas estimation, transaction debugging, and integration with Ethereum testnets. Developers can use Remix to deploy smart contracts, simulate transactions, and optimize gas usage before deploying them to the Ethereum mainnet. The deployment process in Remix IDE is illustrated in Figure~\ref{fig:remix_deployment}.
+ 
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{remix ide.PNG}
+ \caption{Smart contract deployment in Remix IDE}
+ \label{fig:remix_deployment}
+ \end{figure}
 
 
  \section{Conclusion}
@@ -554,14 +599,34 @@ Another key advantage of Ganache is the ability to reset the blockchain state at
 
 
 \section{Usage of Ganache in the Project}
-Ganache served as the primary testing environment for the EnergyBilling smart contract before it was deployed to the Ethereum testnet.  Because Ethereum smart contracts demand gas prices for each transaction, testing on a local blockchain reduced unnecessary costs.
+Ganache served as the primary testing environment for the \textbf{EnergyBilling} smart contract before deployment to the Ethereum testnet. Since Ethereum smart contracts require gas fees for each transaction, testing on a local blockchain helped reduce unnecessary costs. The project workflow began with launching Ganache,which creates a private Ethereum blockchain. 
 
-The project workflow began with the launch of Ganache, which creates a private Ethereum blockchain.  Several pre-funded accounts were utilized to simulate user interaction with the contract.  The Remix IDE was then linked to Ganache to facilitate contract compilation and deployment.  This configuration allowed for efficient testing of contract functionality such as energy storage, bill computation, and payment.
+Several pre-funded accounts were used to simulate user interactions with the contract. The Remix IDE was then connected to Ganache for contract compilation and deployment. This configuration enabled efficient testing of contract functionalities such as energy storage, bill computation, and payment, as illustrated in Figure\ref{fig:ganache_accounts}.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{chain.PNG}
+\caption{Pre-funded accounts in Ganache}
+\label{fig:ganache_accounts}
+\end{figure}
 
-One of the major things investigated with Ganache was gas estimate.  Every smart contract function uses gas, and knowing the cost of each action is critical for optimization.  Before deploying the contract to an actual testnet, modifications were performed to minimize gas expenses using Ganache's transaction cost analysis.
+One of the key aspects analyzed using Ganache was gas estimation. Every smart contract function consumes gas, and understanding the cost of each action is crucial for optimization. Before deploying the contract to an actual testnet, modifications were made to minimize gas expenses using Ganache's transaction cost analysis, as shown in Figure~\ref{fig:ganache_transactions}.
 
-Additionally, Ganache's rapid transaction mining enabled quick iterations.  Unlike Sepolia, where transactions can take time to confirm, Ganache guaranteed that tests could be done quickly, resulting in shorter development cycles.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{contract creation.PNG}
+\caption{Transaction log in Ganache showing contract creation and function execution}
+\label{fig:ganache_transactions}
+\end{figure}
+
+Additionally, Ganache's instant transaction mining allowed for rapid testing iterations. Unlike Sepolia, where transactions take time to confirm, Ganache ensured that tests could be conducted quickly, leading to shorter development cycles. Figure~\ref{fig:ganache_blocks} illustrates the blockchain view in Ganache, showing the sequence of transactions and blocks mined during testing.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{trasnsactions.PNG}
+\caption{Blockchain view in Ganache displaying mined blocks and transactions}
+\label{fig:ganache_blocks}
+\end{figure}
 
 
 \section{Conclusion}
@@ -682,6 +747,26 @@ The Internet has grown from a basic information-sharing platform to a global net
    </div>
  );
  \end{lstlisting}
+ The frontend allows seamless interaction with the smart contract, enabling users to track their energy consumption and settle their bills efficiently. The main interface of the React application is shown in Figure~\ref{fig:frontend_ui}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\textwidth]{web3 App.PNG}
+\caption{User interface of the Energy Billing System}
+\label{fig:frontend_ui}
+\end{figure}
+
+\section{Transaction Logs and User Interaction}
+To verify the proper execution of smart contract functions, transaction logs from the frontend interactions were analyzed. When a user stores energy data, retrieves the bill, or makes a payment, corresponding transactions are recorded on the blockchain. Figure~\ref{fig:frontend_transactions} presents a transaction log demonstrating these interactions.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{frontend Logs.PNG}
+\caption{Transaction log from frontend interactions with the smart contract}
+\label{fig:frontend_transactions}
+\end{figure}
+
+By integrating React with Web3.js, users can seamlessly communicate with the Ethereum blockchain, ensuring a smooth and responsive experience.
  
  \section{Conclusion}
  This Web3 application successfully integrates React, Ganache, and ThingsBoard to enable decentralized energy billing. It demonstrates the potential of blockchain for transparent and automated energy management.
@@ -815,6 +900,11 @@ If there are updates to the React application or other services, rebuild and res
 \begin{lstlisting}[language=bash]
 docker-compose up --build -d
 \end{lstlisting}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{docker container.PNG}
+    \caption{Docker Containers}
+    \end{figure}
 
 \subsection{Stopping and Removing Containers}
 

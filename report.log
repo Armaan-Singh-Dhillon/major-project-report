@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.9)  16 MAR 2025 17:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.9)  17 MAR 2025 09:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -453,7 +453,7 @@ Chapter 1.
 
 ]
 Chapter 2.
-<basicArchitecture.png, id=418, 1877.0125pt x 773.89125pt>
+<basicArchitecture.png, id=428, 1877.0125pt x 773.89125pt>
 File: basicArchitecture.png Graphic file (type png)
 <use basicArchitecture.png>
 Package pdftex.def Info: basicArchitecture.png  used on input line 88.
@@ -476,12 +476,12 @@ Chapter 3.
 [8
 
 ]
-<image.png, id=448, 939.51pt x 668.4975pt>
+<image.png, id=458, 939.51pt x 668.4975pt>
 File: image.png Graphic file (type png)
 <use image.png>
 Package pdftex.def Info: image.png  used on input line 136.
 (pdftex.def)             Requested size: 289.1282pt x 205.72241pt.
-<MCP3208.PNG, id=450, 294.50024pt x 331.2375pt>
+<MCP3208.PNG, id=460, 294.50024pt x 331.2375pt>
 File: MCP3208.PNG Graphic file (type png)
 <use MCP3208.PNG>
 Package pdftex.def Info: MCP3208.PNG  used on input line 146.
@@ -489,7 +489,7 @@ Package pdftex.def Info: MCP3208.PNG  used on input line 146.
 
 
 [9 <./image.png (PNG copy)>]
-<smartHomeAutocomplete.PNG, id=459, 699.21225pt x 401.70074pt>
+<smartHomeAutocomplete.PNG, id=469, 699.21225pt x 401.70074pt>
 File: smartHomeAutocomplete.PNG Graphic file (type png)
 <use smartHomeAutocomplete.PNG>
 Package pdftex.def Info: smartHomeAutocomplete.PNG  used on input line 160.
@@ -497,7 +497,7 @@ Package pdftex.def Info: smartHomeAutocomplete.PNG  used on input line 160.
 
 
 [10 <./MCP3208.PNG>]
-<Capture.PNG, id=467, 366.168pt x 311.9655pt>
+<Capture.PNG, id=477, 366.168pt x 311.9655pt>
 File: Capture.PNG Graphic file (type png)
 <use Capture.PNG>
 Package pdftex.def Info: Capture.PNG  used on input line 175.
@@ -505,12 +505,12 @@ Package pdftex.def Info: Capture.PNG  used on input line 175.
 
 
 [11 <./smartHomeAutocomplete.PNG> <./Capture.PNG>]
-<ACS.PNG, id=482, 277.035pt x 181.27725pt>
+<ACS.PNG, id=492, 277.035pt x 181.27725pt>
 File: ACS.PNG Graphic file (type png)
 <use ACS.PNG>
 Package pdftex.def Info: ACS.PNG  used on input line 185.
 (pdftex.def)             Requested size: 168.65935pt x 110.36044pt.
-<voltageMeasurment.PNG, id=483, 714.87074pt x 382.42876pt>
+<voltageMeasurment.PNG, id=493, 714.87074pt x 382.42876pt>
 File: voltageMeasurment.PNG Graphic file (type png)
 <use voltageMeasurment.PNG>
 Package pdftex.def Info: voltageMeasurment.PNG  used on input line 193.
@@ -518,12 +518,12 @@ Package pdftex.def Info: voltageMeasurment.PNG  used on input line 193.
 
 
 [12 <./ACS.PNG>]
-<PowerFactor.PNG, id=493, 710.655pt x 380.622pt>
+<PowerFactor.PNG, id=503, 710.655pt x 380.622pt>
 File: PowerFactor.PNG Graphic file (type png)
 <use PowerFactor.PNG>
 Package pdftex.def Info: PowerFactor.PNG  used on input line 200.
 (pdftex.def)             Requested size: 289.1282pt x 154.8596pt.
-<smartEnergy.PNG, id=494, 563.706pt x 485.4135pt>
+<smartEnergy.PNG, id=504, 563.706pt x 485.4135pt>
 File: smartEnergy.PNG Graphic file (type png)
 <use smartEnergy.PNG>
 Package pdftex.def Info: smartEnergy.PNG  used on input line 210.
@@ -560,76 +560,130 @@ Chapter 4.
 [19
 
 ]
+<home.PNG, id=639, 1152.10425pt x 552.26324pt>
+File: home.PNG Graphic file (type png)
+<use home.PNG>
+Package pdftex.def Info: home.PNG  used on input line 346.
+(pdftex.def)             Requested size: 481.87546pt x 230.98831pt.
+<device creation.PNG, id=641, 434.22224pt x 473.3685pt>
+File: device creation.PNG Graphic file (type png)
+<use device creation.PNG>
+Package pdftex.def Info: device creation.PNG  used on input line 356.
+(pdftex.def)             Requested size: 168.65935pt x 183.86177pt.
 
-[20]
 
-[21]
+[20 <./home.PNG>]
+
+[21 <./device creation.PNG>]
+<device Details.PNG, id=664, 582.37575pt x 488.42474pt>
+File: device Details.PNG Graphic file (type png)
+<use device Details.PNG>
+Package pdftex.def Info: device Details.PNG  used on input line 404.
+(pdftex.def)             Requested size: 385.50183pt x 323.32272pt.
+
 
 [22]
+<dashboard2.PNG, id=681, 981.6675pt x 330.63525pt>
+File: dashboard2.PNG Graphic file (type png)
+<use dashboard2.PNG>
+Package pdftex.def Info: dashboard2.PNG  used on input line 417.
+(pdftex.def)             Requested size: 481.87546pt x 162.30026pt.
+<dashboard1.PNG, id=682, 978.054pt x 320.99925pt>
+File: dashboard1.PNG Graphic file (type png)
+<use dashboard1.PNG>
+Package pdftex.def Info: dashboard1.PNG  used on input line 421.
+(pdftex.def)             Requested size: 481.87546pt x 158.15306pt.
 
-[23]
-Chapter 5.
 
+[23 <./device Details.PNG>]
 
-[24
-
-]
+[24 <./dashboard2.PNG> <./dashboard1.PNG>]
 
 [25]
 
 [26]
+Chapter 5.
 
-[27]
+
+[27
+
+]
+
+[28]
+
+[29]
+<gas price.PNG, id=802, 1063.5735pt x 258.9675pt>
+File: gas price.PNG Graphic file (type png)
+<use gas price.PNG>
+Package pdftex.def Info: gas price.PNG  used on input line 553.
+(pdftex.def)             Requested size: 481.87546pt x 117.32854pt.
+<remix ide.PNG, id=804, 1154.51324pt x 534.798pt>
+File: remix ide.PNG Graphic file (type png)
+<use remix ide.PNG>
+Package pdftex.def Info: remix ide.PNG  used on input line 565.
+(pdftex.def)             Requested size: 385.50183pt x 178.57294pt.
+
+
+[30 <./gas price.PNG> <./remix ide.PNG>]
+
+[31]
 Chapter 6.
 
 
-[28
+[32
 
 ]
+<chain.PNG, id=828, 889.52325pt x 584.78474pt>
+File: chain.PNG Graphic file (type png)
+<use chain.PNG>
+Package pdftex.def Info: chain.PNG  used on input line 608.
+(pdftex.def)             Requested size: 385.50183pt x 253.43346pt.
 
-[29]
 
-[30]
+[33]
+<contract creation.PNG, id=835, 448.074pt x 97.5645pt>
+File: contract creation.PNG Graphic file (type png)
+<use contract creation.PNG>
+Package pdftex.def Info: contract creation.PNG  used on input line 617.
+(pdftex.def)             Requested size: 385.50183pt x 83.94102pt.
+<trasnsactions.PNG, id=837, 882.8985pt x 527.571pt>
+File: trasnsactions.PNG Graphic file (type png)
+<use trasnsactions.PNG>
+Package pdftex.def Info: trasnsactions.PNG  used on input line 626.
+(pdftex.def)             Requested size: 385.50183pt x 230.35289pt.
+
+
+[34 <./chain.PNG> <./contract creation.PNG>]
+
+[35 <./trasnsactions.PNG>]
 Chapter 7.
 
 
-[31
+[36
 
 ]
 
-[32]
-
-[33]
-
-[34]
-Chapter 8.
-
-
-[35
-
-]
-
-[36]
-
-[37] (A:\MIKTEX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (A:\MIKTEX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-)
+[37]
 
 [38]
-Chapter 9.
+<web3 App.PNG, id=941, 323.40825pt x 362.5545pt>
+File: web3 App.PNG Graphic file (type png)
+<use web3 App.PNG>
+Package pdftex.def Info: web3 App.PNG  used on input line 754.
+(pdftex.def)             Requested size: 192.74724pt x 216.0739pt.
 
 
-[39
+[39 <./web3 App.PNG>]
+<frontend Logs.PNG, id=966, 526.96875pt x 114.4275pt>
+File: frontend Logs.PNG Graphic file (type png)
+<use frontend Logs.PNG>
+Package pdftex.def Info: frontend Logs.PNG  used on input line 764.
+(pdftex.def)             Requested size: 385.50183pt x 83.71295pt.
 
-]
-Chapter 10.
 
+[40 <./frontend Logs.PNG>]
+Chapter 8.
 
-[40
-
-] (report.bbl
 
 [41
 
@@ -637,30 +691,64 @@ Chapter 10.
 
 [42]
 
-[43]
+[43] (A:\MIKTEX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+) (A:\MIKTEX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+<docker container.PNG, id=1060, 925.056pt x 330.63525pt>
+File: docker container.PNG Graphic file (type png)
+<use docker container.PNG>
+Package pdftex.def Info: docker container.PNG  used on input line 905.
+(pdftex.def)             Requested size: 481.87546pt x 172.23402pt.
 
-[44])
 
-[45] (report.aux)
+[44 <./docker container.PNG>]
+
+[45]
+Chapter 9.
+
+
+[46
+
+]
+Chapter 10.
+
+
+[47
+
+] (report.bbl
+
+[48
+
+]
+
+[49]
+
+[50]
+
+[51])
+
+[52] (report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-09>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 228C83813B91EAF95AE368873E1AD59F;14174.
+(rerunfilecheck)             Checksum: EB0D0F0241EEC11047886C291F1DB8BA;14718.
  ) 
 Here is how much of TeX's memory you used:
- 15617 strings out of 473576
- 233102 string characters out of 5732989
- 1107639 words of memory out of 5000000
- 38129 multiletter control sequences out of 15000+600000
+ 15749 strings out of 473576
+ 235733 string characters out of 5732989
+ 1109049 words of memory out of 5000000
+ 38239 multiletter control sequences out of 15000+600000
  569063 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,1085b,2137s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,1215b,2137s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\armaan\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt1000.pk> <C:\Users\armaan\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><A:/MIKTEX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><A:/MIKTEX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><A:/MIKTEX/fonts/type1/public/amsfonts/cm/cmr12.pfb><A:/MIKTEX/fonts/type1/public/amsfonts/cm/cmr6.pfb><A:/MIKTEX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><A:/MIKTEX/fonts/type1/public/amsfonts/cm/cmti12.pfb><A:/MIKTEX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><A:/MIKTEX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (47 pages, 711665 bytes).
+Output written on report.pdf (54 pages, 1629118 bytes).
 PDF statistics:
- 1188 PDF objects out of 1200 (max. 8388607)
- 501 named destinations out of 1000 (max. 500000)
- 638 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1280 PDF objects out of 1440 (max. 8388607)
+ 523 named destinations out of 1000 (max. 500000)
+ 719 words of extra memory for PDF output out of 10000 (max. 10000000)
 

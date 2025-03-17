@@ -25,50 +25,52 @@
 \contentsline {chapter}{\numberline {4}ThingsBoard Integration}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduction to ThingsBoard}{19}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Prerequisites for ThingsBoard MQTT Integration}{20}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Connecting ThingsBoard with MQTT}{20}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Step 1: Define Connection Parameters}{20}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Step 2: Install and Import MQTT Library}{20}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Step 3: Create MQTT Client and Connect}{21}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Step 4: Publish Sensor Data}{21}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Step 5: Verify Data in ThingsBoard}{21}{subsection.4.3.5}%
-\contentsline {section}{\numberline {4.4}Prerequisites for ThingsBoard API Integration}{21}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Connecting to ThingsBoard API}{22}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Step 1: Generate Access Token}{22}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Step 2: Extract JWT Token}{22}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Step 3: Fetch Telemetry Data}{22}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Step 4: Process Response Data}{23}{subsection.4.5.4}%
-\contentsline {section}{\numberline {4.6}Conclusion}{23}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Blockchain and Smart Contracts}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction to Blockchain}{24}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Advantages of Blockchain and Smart Contracts}{24}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Solidity Basics}{25}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Smart Contract Deployed in the Project}{25}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Ethereum and Gas Estimation}{26}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Remix IDE and Smart Contract Deployment}{27}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Conclusion}{27}{section.5.7}%
-\contentsline {chapter}{\numberline {6}Ganache Toolchain}{28}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction to Ganache}{28}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Ethereum Testnets and Their Challenges}{28}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Why Ganache is Beneficial for Development}{29}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Usage of Ganache in the Project}{29}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Conclusion}{30}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Building the Web3 Application}{31}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Introduction}{31}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Project Setup}{31}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Connecting to Blockchain}{32}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Fetching Energy Data}{32}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Interacting with the Smart Contract}{32}{section.7.5}%
-\contentsline {subsection}{\numberline {7.5.1}Storing Energy Data}{32}{subsection.7.5.1}%
-\contentsline {subsection}{\numberline {7.5.2}Fetching and Paying Bills}{33}{subsection.7.5.2}%
-\contentsline {section}{\numberline {7.6}Frontend Interface}{34}{section.7.6}%
-\contentsline {section}{\numberline {7.7}Conclusion}{34}{section.7.7}%
-\contentsline {chapter}{\numberline {8}Dockerizing the Complete System}{35}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Introduction}{35}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Dockerization Process}{35}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Docker Compose}{35}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Dockerfile}{37}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Running the Containers}{38}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Stopping and Removing Containers}{38}{subsection.8.2.4}%
-\contentsline {section}{\numberline {8.3}Conclusion}{38}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Future Scope}{39}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Conclusion}{40}{chapter.10}%
+\contentsline {section}{\numberline {4.3}Connecting ThingsBoard with MQTT}{21}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Step 1: Define Connection Parameters}{21}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Step 2: Install and Import MQTT Library}{21}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Step 3: Create MQTT Client and Connect}{22}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Step 4: Publish Sensor Data}{22}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Step 5: Verify Data in ThingsBoard}{23}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Step 6:Creation of Dashboard in ThingsBoard}{23}{subsection.4.3.6}%
+\contentsline {section}{\numberline {4.4}Prerequisites for ThingsBoard API Integration}{24}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Connecting to ThingsBoard API}{24}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Step 1: Generate Access Token}{25}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Step 2: Extract JWT Token}{25}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Step 3: Fetch Telemetry Data}{25}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Step 4: Process Response Data}{26}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}Conclusion}{26}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Blockchain and Smart Contracts}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction to Blockchain}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Advantages of Blockchain and Smart Contracts}{27}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Solidity Basics}{28}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Smart Contract Deployed in the Project}{28}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Ethereum and Gas Estimation}{29}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Remix IDE and Smart Contract Deployment}{30}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Conclusion}{31}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Ganache Toolchain}{32}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction to Ganache}{32}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Ethereum Testnets and Their Challenges}{32}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Why Ganache is Beneficial for Development}{33}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Usage of Ganache in the Project}{33}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Conclusion}{35}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Building the Web3 Application}{36}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction}{36}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Project Setup}{36}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Connecting to Blockchain}{37}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Fetching Energy Data}{37}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Interacting with the Smart Contract}{37}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Storing Energy Data}{37}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Fetching and Paying Bills}{38}{subsection.7.5.2}%
+\contentsline {section}{\numberline {7.6}Frontend Interface}{39}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Transaction Logs and User Interaction}{40}{section.7.7}%
+\contentsline {section}{\numberline {7.8}Conclusion}{40}{section.7.8}%
+\contentsline {chapter}{\numberline {8}Dockerizing the Complete System}{41}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introduction}{41}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Dockerization Process}{41}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Docker Compose}{41}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Dockerfile}{43}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Running the Containers}{44}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Stopping and Removing Containers}{44}{subsection.8.2.4}%
+\contentsline {section}{\numberline {8.3}Conclusion}{45}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Future Scope}{46}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Conclusion}{47}{chapter.10}%
