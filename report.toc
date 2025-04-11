@@ -1,76 +1,87 @@
-\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Project Workflow}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Overview}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}System Architecture}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Components and Data Flow}{5}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Energy Measurement and Data Acquisition}{5}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Data Transmission and Storage}{6}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Web3 Integration and Smart Contracts}{6}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Billing and Payment System}{6}{subsection.2.3.4}%
-\contentsline {section}{\numberline {2.4}Conclusion}{6}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Proteus Schematic Design and Simulation}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduction}{8}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Schematic Design in Proteus}{9}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Smart Home Automation System}{9}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Complete Schematic of Smart Home Automation System}{10}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Smart Energy Meter and Power Factor Measurement}{11}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Complete Schematic of Smart Energy Meter}{14}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Code Implementation}{14}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Arduino Code for Smart Energy Meter}{14}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Raspberry Pi Code for Home Automation}{15}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Simulation and Testing}{17}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Home Automation Testing}{17}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Smart Meter Testing}{17}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Conclusion}{18}{section.3.5}%
-\contentsline {chapter}{\numberline {4}ThingsBoard Integration}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction to ThingsBoard}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Prerequisites for ThingsBoard MQTT Integration}{20}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Connecting ThingsBoard with MQTT}{21}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Step 1: Define Connection Parameters}{21}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Step 2: Install and Import MQTT Library}{21}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Step 3: Create MQTT Client and Connect}{22}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Step 4: Publish Sensor Data}{22}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Step 5: Verify Data in ThingsBoard}{23}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Step 6:Creation of Dashboard in ThingsBoard}{23}{subsection.4.3.6}%
-\contentsline {section}{\numberline {4.4}Prerequisites for ThingsBoard API Integration}{24}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Connecting to ThingsBoard API}{24}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Step 1: Generate Access Token}{25}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Step 2: Extract JWT Token}{25}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Step 3: Fetch Telemetry Data}{25}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Step 4: Process Response Data}{26}{subsection.4.5.4}%
-\contentsline {section}{\numberline {4.6}Conclusion}{26}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Blockchain and Smart Contracts}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction to Blockchain}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Advantages of Blockchain and Smart Contracts}{27}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Solidity Basics}{28}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Smart Contract Deployed in the Project}{28}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Ethereum and Gas Estimation}{29}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Remix IDE and Smart Contract Deployment}{30}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Conclusion}{31}{section.5.7}%
-\contentsline {chapter}{\numberline {6}Ganache Toolchain}{32}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction to Ganache}{32}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Ethereum Testnets and Their Challenges}{32}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Why Ganache is Beneficial for Development}{33}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Usage of Ganache in the Project}{33}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Conclusion}{35}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Building the Web3 Application}{36}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Introduction}{36}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Project Setup}{36}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Connecting to Blockchain}{37}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Fetching Energy Data}{37}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Interacting with the Smart Contract}{37}{section.7.5}%
-\contentsline {subsection}{\numberline {7.5.1}Storing Energy Data}{37}{subsection.7.5.1}%
-\contentsline {subsection}{\numberline {7.5.2}Fetching and Paying Bills}{38}{subsection.7.5.2}%
-\contentsline {section}{\numberline {7.6}Frontend Interface}{39}{section.7.6}%
-\contentsline {section}{\numberline {7.7}Transaction Logs and User Interaction}{40}{section.7.7}%
-\contentsline {section}{\numberline {7.8}Conclusion}{40}{section.7.8}%
-\contentsline {chapter}{\numberline {8}Dockerizing the Complete System}{41}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Introduction}{41}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Dockerization Process}{41}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Docker Compose}{41}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Dockerfile}{43}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Running the Containers}{44}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Stopping and Removing Containers}{44}{subsection.8.2.4}%
-\contentsline {section}{\numberline {8.3}Conclusion}{45}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Future Scope}{46}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Conclusion}{47}{chapter.10}%
+\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Literature Survey}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Overview of the Research Domain}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Review of Existing Work}{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Security Concerns}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Interoperability Issues}{8}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}User Experience}{8}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Energy Efficiency}{9}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Research Gaps and Motivation}{9}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Comparative Analysis with the Proposed Solution}{9}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Conclusion}{10}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Project Workflow}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Overview}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}System Architecture}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Components and Data Flow}{11}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Energy Measurement and Data Acquisition}{11}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Data Transmission and Storage}{12}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Web3 Integration and Smart Contracts}{12}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Billing and Payment System}{12}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Conclusion}{12}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Proteus Schematic Design and Simulation}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Schematic Design in Proteus}{15}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Smart Home Automation System}{15}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Complete Schematic of Smart Home Automation System}{16}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Smart Energy Meter and Power Factor Measurement}{17}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Complete Schematic of Smart Energy Meter}{20}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Code Implementation}{20}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Arduino Code for Smart Energy Meter}{20}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Raspberry Pi Code for Home Automation}{21}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Simulation and Testing}{23}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Home Automation Testing}{23}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Smart Meter Testing}{23}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Conclusion}{24}{section.4.5}%
+\contentsline {chapter}{\numberline {5}ThingsBoard Integration}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction to ThingsBoard}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Prerequisites for ThingsBoard MQTT Integration}{26}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Connecting ThingsBoard with MQTT}{27}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Step 1: Define Connection Parameters}{27}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Step 2: Install and Import MQTT Library}{27}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Step 3: Create MQTT Client and Connect}{28}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Step 4: Publish Sensor Data}{28}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Step 5: Verify Data in ThingsBoard}{29}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Step 6:Creation of Dashboard in ThingsBoard}{29}{subsection.5.3.6}%
+\contentsline {section}{\numberline {5.4}Prerequisites for ThingsBoard API Integration}{30}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Connecting to ThingsBoard API}{30}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Step 1: Generate Access Token}{31}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Step 2: Extract JWT Token}{31}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Step 3: Fetch Telemetry Data}{31}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Step 4: Process Response Data}{32}{subsection.5.5.4}%
+\contentsline {section}{\numberline {5.6}Conclusion}{32}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Blockchain and Smart Contracts}{33}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction to Blockchain}{33}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Advantages of Blockchain and Smart Contracts}{33}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Solidity Basics}{34}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Smart Contract Deployed in the Project}{34}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Ethereum and Gas Estimation}{35}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Remix IDE and Smart Contract Deployment}{36}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Conclusion}{37}{section.6.7}%
+\contentsline {chapter}{\numberline {7}Ganache Toolchain}{38}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction to Ganache}{38}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Ethereum Testnets and Their Challenges}{38}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Why Ganache is Beneficial for Development}{39}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Usage of Ganache in the Project}{39}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Conclusion}{41}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Building the Web3 Application}{42}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introduction}{42}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Project Setup}{42}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Connecting to Blockchain}{43}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Fetching Energy Data}{43}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Interacting with the Smart Contract}{43}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Storing Energy Data}{43}{subsection.8.5.1}%
+\contentsline {subsection}{\numberline {8.5.2}Fetching and Paying Bills}{44}{subsection.8.5.2}%
+\contentsline {section}{\numberline {8.6}Frontend Interface}{45}{section.8.6}%
+\contentsline {section}{\numberline {8.7}Transaction Logs and User Interaction}{46}{section.8.7}%
+\contentsline {section}{\numberline {8.8}Conclusion}{46}{section.8.8}%
+\contentsline {chapter}{\numberline {9}Dockerizing the Complete System}{47}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introduction}{47}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Dockerization Process}{47}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Docker Compose}{47}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Dockerfile}{49}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Running the Containers}{50}{subsection.9.2.3}%
+\contentsline {subsection}{\numberline {9.2.4}Stopping and Removing Containers}{50}{subsection.9.2.4}%
+\contentsline {section}{\numberline {9.3}Conclusion}{51}{section.9.3}%
+\contentsline {chapter}{\numberline {10}Future Scope}{52}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Conclusion}{53}{chapter.11}%

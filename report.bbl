@@ -63,6 +63,106 @@ M.~Abdelhamid and G.~Hassan, ``Blockchain and smart contracts,'' in
   91–95. [Online]. Available: \url{https://doi.org/10.1145/3328833.3328857}
 \BIBentrySTDinterwordspacing
 
+\bibitem{julies}
+B.~D. Julies and T.~Zuva, ``A review on intenet of things smart homes,
+  challenges, open issues and countermeasures,'' in \emph{Software Engineering
+  Perspectives in Intelligent Systems}, R.~Silhavy, P.~Silhavy, and
+  Z.~Prokopova, Eds.\hskip 1em plus 0.5em minus 0.4em\relax Cham: Springer
+  International Publishing, 2020, pp. 1073--1089.
+
+\bibitem{Zhang2022TheCS}
+B.~Zhang and Y.~Zhang, ``The current situation and future challenges of smart
+  home,'' 2022.
+
+\bibitem{Ahmed02102021}
+\BIBentryALTinterwordspacing
+D.~A. and, ``Anthropomorphizing artificial intelligence: towards a
+  user-centered approach for addressing the challenges of over-automation and
+  design understandability in smart homes,'' \emph{Intelligent Buildings
+  International}, vol.~13, no.~4, pp. 227--240, 2021. [Online]. Available:
+  \url{https://doi.org/10.1080/17508975.2020.1795612}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Venkatesh}
+V.~A, ``Iot-based smart home automation systems: Enhancing energy efficiency
+  and security,'' \emph{International Journal for Research in Applied Science
+  and Engineering Technology}, vol.~12, no.~12, p. 2243–2253, Dec 2024.
+
+\bibitem{mazid2023iot}
+A.~Mazid, S.~Kirmani, and Manaullah, ``Iot enabled framework for smart home
+  automation using artificial intelligence and blockchain technology,'' in
+  \emph{International Conference on Artificial Intelligence of Things}.\hskip
+  1em plus 0.5em minus 0.4em\relax Springer, 2023, pp. 357--367.
+
+\bibitem{li2023let}
+Y.~Li, A.~M. Mandalari, and I.~Straw, ``Who let the smart toaster hack the
+  house? an investigation into the security vulnerabilities of consumer iot
+  devices,'' \emph{arXiv preprint arXiv:2306.09017}, 2023.
+
+\bibitem{Sobin_2020}
+C.~C. Sobin, ``A survey on architecture, protocols and challenges in iot,''
+  \emph{Wireless Personal Communications}, vol. 112, no.~3, p. 1383–1429, Jan
+  2020.
+
+\bibitem{holguin2023smart}
+I.~Holguin and S.~Errapotu, ``Smart home iot communication protocols and
+  advances in their security and interoperability,'' \emph{Proceedings of the
+  International Conference on Cyber Security and Networking (CSNet)}, pp.
+  208--211, October 2023.
+
+\bibitem{portales2019challenges}
+\BIBentryALTinterwordspacing
+C.~Portalés, S.~Casas, and K.~Kreuzer, ``Challenges and trends in home
+  automation: Addressing the interoperability problem with the open-source
+  platform openhab,'' in \emph{Harnessing the Internet of Everything (IoE) for
+  Accelerated Innovation Opportunities}.\hskip 1em plus 0.5em minus 0.4em\relax
+  IGI Global, 2019, pp. 148--174. [Online]. Available:
+  \url{https://www.igi-global.com/chapter/challenges-and-trends-in-home-automation/291662}
+\BIBentrySTDinterwordspacing
+
+\bibitem{sita2024development}
+I.~V. Sita and B.~David, ``Development and implementation of a comprehensive
+  smart home automation system using home assistant and iot devices,'' in
+  \emph{2024 4th International Conference on Electrical, Computer,
+  Communications and Mechatronics Engineering (ICECCME)}.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE, 2024, pp. 1--7.
+
+\bibitem{bai2024research}
+\BIBentryALTinterwordspacing
+X.~Bai, ``Research on smart home system design and user experience improvement
+  strategies,'' \emph{Advances in Computer, Signals and Systems}, vol.~8, pp.
+  34--39, 2024. [Online]. Available:
+  \url{https://www.clausiuspress.com/article/13197.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{elmi2023interoperable}
+\BIBentryALTinterwordspacing
+Y.~A. Elmi, ``Interoperable iot devices and systems for smart homes: A data
+  analytics approach to enhance user experience and energy efficiency,''
+  \emph{Journal of Digitainability, Realism \& Mastery (DREAM)}, vol.~2,
+  no.~10, pp. 51--66, October 2023. [Online]. Available:
+  \url{https://dreamjournal.my/index.php/DREAM/article/view/195}
+\BIBentrySTDinterwordspacing
+
+\bibitem{mare2019consumer}
+\BIBentryALTinterwordspacing
+S.~Mare, L.~Girvin, F.~Roesner, and T.~Kohno, ``Consumer smart homes: Where we
+  are and where we need to go,'' in \emph{Proceedings of the 20th International
+  Workshop on Mobile Computing Systems and Applications (HotMobile '19)}.\hskip
+  1em plus 0.5em minus 0.4em\relax Santa Cruz, CA, USA: ACM, Feb. 2019, pp.
+  117--122. [Online]. Available:
+  \url{https://dl.acm.org/doi/10.1145/3301293.3302371}
+\BIBentrySTDinterwordspacing
+
+\bibitem{kaur2024evolution}
+\BIBentryALTinterwordspacing
+G.~Kaur, A.~Kaur, N.~Sharma, M.~Singh, and K.~Mittal, ``Evolution of ai in
+  smart home systems: A comprehensive review,'' \emph{CGC International Journal
+  of Contemporary Technology}, vol.~6, no.~2, pp. 388--395, October 2024.
+  [Online]. Available:
+  \url{https://cgcijctr.com/download.php?file=C20240401_Evolution+of+AI+in+Smart+Home+Systems+A+Comprehensive+Review_Final.pdf}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Hu2018BlockchainbasedSC}
 \BIBentryALTinterwordspacing
 Y.~Hu, M.~Liyanage, A.~Mansoor, K.~Thilakarathna, G.~Jourjon, and A.~P.

@@ -14,6 +14,10 @@
 \usepackage{float}
 \usepackage{listings}        % Code formatting
 \usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs} % For better table lines
+\usepackage{array}
+\usepackage{makecell}
 
 % Customization
 \setcounter{secnumdepth}{3}  % Section numbering depth
@@ -152,6 +156,8 @@ I would like to extend my sincere gratitude to my colleagues and seniors for the
 \end{abstract}
 
 \tableofcontents
+\listoftables
+\listoffigures
 \newpage
 
 \chapter{Introduction}
@@ -163,8 +169,79 @@ In addition to energy monitoring, home automation systems include sensors, camer
 
 Blockchain and smart contracts have emerged as disruptive technologies with the potential to transform many sectors.  Smart contracts are self-executing programs that autonomously enforce contractual conditions without the need for intermediaries, improving efficiency and lowering operational expenses\cite{10.1145/3328833.3328857}.  These technologies offer advantages such as transparency, security, and decentralization, making them appropriate for a wide range of applications, from identity management to business process automation\cite{chaudhari2017smart}.
 
- Home automation systems that combine IoT with blockchain-based smart contracts can improve trust and security in energy management.  This project investigates the integration of a smart energy meter with a blockchain-based billing system, using Raspberry Pi, IoT platforms, and Ethereum smart contracts to create a decentralized, transparent, and automated energy billing solution.
+Home automation systems that combine IoT with blockchain-based smart contracts can improve trust and security in energy management.  This project investigates the integration of a smart energy meter with a blockchain-based billing system, using Raspberry Pi, IoT platforms, and Ethereum smart contracts to create a decentralized, transparent, and automated energy billing solution.
 
+\chapter{Literature Survey}
+
+\section{Introduction}
+Smart home automation has become a vital part of modern living, offering benefits such as increased convenience, energy optimization, and enhanced security. With the advancement of Internet of Things (IoT) technologies, homes are now equipped with interconnected sensors, controllers, and cloud platforms that enable real-time automation and monitoring. However, as noted in numerous studies, the journey toward widespread adoption remains hindered by technical, financial, and usability-related challenges \cite{julies}\cite{Zhang2022TheCS}\cite{Ahmed02102021}.
+
+While these technologies show promise, real-world implementations frequently fall short due to constraints such as inadequate device interoperability, security risks, a lack of customisation, and exorbitant installation costs.  Existing systems sometimes rely on closed ecosystems, further complicating integration and limiting user flexibility.  This chapter explores major literature in the field, identifies the primary barriers to smart home automation, and compares those results to our system's implementation, which uses Raspberry Pi, ThingsBoard, Docker, and real-time sensor-cloud connection.
+
+
+
+\section{Overview of the Research Domain}
+The smart home ecosystem comprises a diverse set of devices and platforms that collaborate to automate household operations.  Temperature control, lighting, security systems, and energy monitoring are all examples of IoT-enabled applications.  As seen in recent studies, the integration of different sensors and platforms brings both functional potential and additional complications\cite{Venkatesh}.
+
+Security breaches, data privacy issues, device incompatibilities, and poor user engagement remain significant impediments to adoption.  Although open-source systems and current edge computing devices such as the Raspberry Pi provide promising possibilities, much of the research focuses on systems that are either highly centralized or dispersed due to proprietary constraints.  This assessment divides the main challenges into four categories: security, interoperability, user experience, and energy efficiency.
+
+
+\section{Review of Existing Work}
+\subsection{Security Concerns}
+Security in smart home automation is a serious concern raised in various research.  As the number of internet-connected gadgets grows, so does the attack surface for cyber attacks.  According to multiple sources, many IoT devices lack strong encryption and authentication, leaving them vulnerable to unauthorized access\cite{Venkatesh}\cite{mazid2023iot}.  Others raise worries about user data being collected or modified owing to inadequate or nonexistent privacy protections\cite{li2023let}.  Furthermore, the lack of common security methods across different manufacturers increases these risks\cite{Sobin_2020}\cite{holguin2023smart}.
+
+\subsection{Interoperability Issues}
+Interoperability refers to the ability of equipment from various vendors to communicate seamlessly.  According to research, many smart home systems fail to integrate effectively because they use proprietary communication protocols\cite{portales2019challenges}\cite{Sobin_2020}.  Incompatibility between platforms frequently causes users to rely on vendor-specific hubs or apps, resulting in a disjointed user experience.  This difficulty is exacerbated by the lack of globally accepted IoT standards\cite{holguin2023smart}.
+
+\subsection{User Experience}
+Despite their functional potential, smart home systems can provide a terrible user experience.  According to studies, setup methods are typically technically complex, preventing non-expert users\cite{sita2024development}\cite{bai2024research}.  Other findings indicate that many systems fail to tailor interactions depending on user behavior, leaving automation seeming stiff and detached\cite{elmi2023interoperable}.  Furthermore, non-intuitive interfaces and a lack of transparency increase user irritation and slow adoption\cite{mare2019consumer}.
+
+\subsection{Energy Efficiency}
+Energy efficiency is usually highlighted as a significant motivator for smart home adoption, however research shows that many systems fall short of meeting this expectation.  Several studies address how real-time energy monitoring and management are underutilized due to the high system complexity\cite{sita2024development}.  Others point out that balancing user comfort with energy-saving automation is a continuing challenge\cite{Sobin_2020}\cite{elmi2023interoperable}, and that consumers frequently lack awareness into their own consumption habits\cite{kaur2024evolution}.
+
+
+
+
+\section{Research Gaps and Motivation}
+While the present literature thoroughly examines the theoretical and technological underpinnings of smart home automation, the majority of solutions are either too expensive or do not provide end-to-end capability.  Systems that rely significantly on centralized cloud services are vulnerable to latency, data breaches, and platform dependencies.  On the other hand, decentralized systems frequently lack the coordination and integration needed for comprehensive automation.
+
+ The proposed project was motivated by the need for a modular, cost-effective, and fully adaptable system that could be readily installed and maintained.  The project takes a balanced approach, using a Raspberry Pi as an edge controller, ThingsBoard for visualization and device management, and Docker for scalable deployment, to bridge the gap between academic research and real-world applications.
+
+ \section{Comparative Analysis with the Proposed Solution}
+
+The proposed smart home automation solution utilizes Raspberry Pi, ThingsBoard, Docker, and real-time sensor data integration to address limitations identified in existing literature. By leveraging open-source and containerized technologies, it aims to offer a low-cost, secure, and modular framework adaptable to varied use cases. Table~\ref{tab:comparison} summarizes how this solution compares with the challenges found in previous research.
+
+\begin{table}[htbp]
+    \centering
+    \renewcommand{\arraystretch}{1.5} % Adds vertical padding
+    \setlength{\tabcolsep}{8pt}       % Adds horizontal padding
+    \begin{tabular}{|>{\centering\arraybackslash}m{3cm}|
+                    >{\centering\arraybackslash}m{5.5cm}|
+                    >{\centering\arraybackslash}m{5.5cm}|}
+    \hline
+    \textbf{Challenge} & \textbf{Literature Observations} & \textbf{Proposed Solution} \\
+    \hline
+    Security & Weak encryption, poor access control & Encrypted MQTT, Docker-based isolation \\
+    \hline
+    Interoperability & Proprietary protocols, poor integration & Open-source, protocol-agnostic stack \\
+    \hline
+    User Experience & Complex setup, limited personalization & Visual dashboards, easy configuration \\
+    \hline
+    Energy Efficiency & Limited real-time monitoring & Live sensor data, extensible dashboards \\
+    \hline
+    
+    \end{tabular}
+    \caption{Comparison of Literature Challenges and Proposed Solution}
+    \label{tab:comparison}
+
+\end{table}
+    
+
+ 
+\section{Conclusion}
+Smart home automation is always evolving, with substantial advances in device capabilities, cloud integration, and automation intelligence.  However, difficulties such as security vulnerabilities, device compatibility, usability, and energy management continue to impede large-scale adoption.  Existing literature identifies these difficulties, but often lacks practical remedies.
+
+This project provides a comprehensive, technically competent response to these difficulties.  It provides a realistic framework that corresponds with academic research concepts while boosting scalability, dependability, and user empowerment by integrating open-source platforms, containerized infrastructure, and real-time sensor-cloud communication.
 
 \chapter{Project Workflow}
 
