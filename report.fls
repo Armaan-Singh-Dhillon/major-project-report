@@ -204,10 +204,6 @@ INPUT A:\MIKTEX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT A:\MIKTEX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT A:\MIKTEX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 OUTPUT report.toc
-INPUT .\report.lot
-INPUT .\report.lot
-INPUT report.lot
-OUTPUT report.lot
 INPUT .\report.lof
 INPUT .\report.lof
 INPUT report.lof
@@ -337,27 +333,6 @@ INPUT .\remix ide.PNG
 INPUT .\remix ide.PNG
 INPUT .\remix ide.PNG
 INPUT .\remix ide.PNG
-INPUT .\chain.PNG
-INPUT .\chain.PNG
-INPUT .\chain.PNG
-INPUT .\chain.PNG
-INPUT .\chain.PNG
-INPUT .\chain.PNG
-INPUT .\chain.PNG
-INPUT .\contract creation.PNG
-INPUT .\contract creation.PNG
-INPUT .\contract creation.PNG
-INPUT .\contract creation.PNG
-INPUT .\contract creation.PNG
-INPUT .\contract creation.PNG
-INPUT .\contract creation.PNG
-INPUT .\trasnsactions.PNG
-INPUT .\trasnsactions.PNG
-INPUT .\trasnsactions.PNG
-INPUT .\trasnsactions.PNG
-INPUT .\trasnsactions.PNG
-INPUT .\trasnsactions.PNG
-INPUT .\trasnsactions.PNG
 INPUT .\web3 App.PNG
 INPUT .\web3 App.PNG
 INPUT .\web3 App.PNG
@@ -372,19 +347,6 @@ INPUT .\frontend Logs.PNG
 INPUT .\frontend Logs.PNG
 INPUT .\frontend Logs.PNG
 INPUT .\frontend Logs.PNG
-INPUT A:\MIKTEX\tex\latex\listings\lstlang1.sty
-INPUT A:\MIKTEX\tex\latex\listings\lstlang1.sty
-INPUT A:\MIKTEX\tex\latex\listings\lstlang1.sty
-INPUT A:\MIKTEX\tex\latex\listings\lstlang1.sty
-INPUT A:\MIKTEX\tex\latex\listings\lstlang1.sty
-INPUT A:\MIKTEX\tex\latex\listings\lstlang1.sty
-INPUT .\docker container.PNG
-INPUT .\docker container.PNG
-INPUT .\docker container.PNG
-INPUT .\docker container.PNG
-INPUT .\docker container.PNG
-INPUT .\docker container.PNG
-INPUT .\docker container.PNG
 INPUT .\report.bbl
 INPUT .\report.bbl
 INPUT report.bbl

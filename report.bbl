@@ -33,13 +33,6 @@ S.~Chaudhari, P.~Rathod, A.~Shaikh, D.~Vora, and J.~Ahir, ``Smart energy meter
   Electronics and Informatics (ICEI)}.\hskip 1em plus 0.5em minus 0.4em\relax
   IEEE, 2017, pp. 598--601.
 
-\bibitem{rahman2015arduino}
-M.~M. Rahman, M.~O. Islam, M.~S. Salakin \emph{et~al.}, ``Arduino and gsm based
-  smart energy meter for advanced metering and billing system,'' in \emph{2015
-  International Conference on Electrical Engineering and Information
-  Communication Technology (ICEEICT)}.\hskip 1em plus 0.5em minus 0.4em\relax
-  IEEE, 2015, pp. 1--6.
-
 \bibitem{patchava2015smart}
 V.~Patchava, H.~B. Kandala, and P.~R. Babu, ``A smart home automation technique
   with raspberry pi using iot,'' in \emph{2015 International conference on
@@ -52,15 +45,6 @@ R.~A. Atmoko, R.~Riantini, and M.~K. Hasin, ``Iot real time data acquisition
   using mqtt protocol,'' \emph{Journal of Physics: Conference Series}, vol.
   853, no.~1, p. 012003, may 2017. [Online]. Available:
   \url{https://dx.doi.org/10.1088/1742-6596/853/1/012003}
-\BIBentrySTDinterwordspacing
-
-\bibitem{10.1145/3328833.3328857}
-\BIBentryALTinterwordspacing
-M.~Abdelhamid and G.~Hassan, ``Blockchain and smart contracts,'' in
-  \emph{Proceedings of the 8th International Conference on Software and
-  Information Engineering}, ser. ICSIE '19.\hskip 1em plus 0.5em minus
-  0.4em\relax New York, NY, USA: Association for Computing Machinery, 2019, p.
-  91–95. [Online]. Available: \url{https://doi.org/10.1145/3328833.3328857}
 \BIBentrySTDinterwordspacing
 
 \bibitem{julies}
@@ -161,6 +145,15 @@ G.~Kaur, A.~Kaur, N.~Sharma, M.~Singh, and K.~Mittal, ``Evolution of ai in
   of Contemporary Technology}, vol.~6, no.~2, pp. 388--395, October 2024.
   [Online]. Available:
   \url{https://cgcijctr.com/download.php?file=C20240401_Evolution+of+AI+in+Smart+Home+Systems+A+Comprehensive+Review_Final.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{10.1145/3328833.3328857}
+\BIBentryALTinterwordspacing
+M.~Abdelhamid and G.~Hassan, ``Blockchain and smart contracts,'' in
+  \emph{Proceedings of the 8th International Conference on Software and
+  Information Engineering}, ser. ICSIE '19.\hskip 1em plus 0.5em minus
+  0.4em\relax New York, NY, USA: Association for Computing Machinery, 2019, p.
+  91–95. [Online]. Available: \url{https://doi.org/10.1145/3328833.3328857}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Hu2018BlockchainbasedSC}
@@ -288,21 +281,6 @@ R.~Johari, K.~Gupta, and A.~S. Parihar, ``Smart contracts in smart cities:
   Conference on ICRIHE-2020, Delhi, India: IICT-2020}.\hskip 1em plus 0.5em
   minus 0.4em\relax Springer, 2021, pp. 359--367.
 
-\bibitem{brightwell2015overview}
-I.~Brightwell, J.~Cucurull, D.~Galindo, and S.~Guasch, ``An overview of the
-  ivote 2015 voting system,'' \emph{New South Wales Electoral Commission,
-  Australia, Scytl Secure Electronic Voting, Spain}, pp. 1--25, 2015.
-
-\bibitem{gibson2016review}
-J.~P. Gibson, R.~Krimmer, V.~Teague, and J.~Pomares, ``A review of e-voting:
-  the past, present and future,'' \emph{Annals of Telecommunications}, vol.~71,
-  pp. 279--286, 2016.
-
-\bibitem{wang2017review}
-K.-H. Wang, S.~K. Mondal, K.~Chan, and X.~Xie, ``A review of contemporary
-  e-voting: Requirements, technology, systems and usability,'' \emph{Data
-  Science and Pattern Recognition}, vol.~1, no.~1, pp. 31--47, 2017.
-
 \bibitem{aria2023influential}
 R.~Aria, N.~Archer, M.~Khanlari, and B.~Shah, ``Influential factors in the
   design and development of a sustainable web3/metaverse and its
@@ -341,21 +319,5 @@ G.~Wang, R.~Qin, J.~Li, F.-Y. Wang, Y.~Gan, and L.~Yan, ``A novel dao-based
   parallel enterprise management framework in web3 era,'' \emph{IEEE
   Transactions on Computational Social Systems}, vol.~11, no.~1, pp. 839--848,
   2023.
-
-\bibitem{dana2011}
-P.~Dana, ``Interoperability and portability between clouds: Challenges and case
-  study,'' in \emph{Proceedings of the 4th European Conference ServiceWave},
-  vol. 6994, Poznan, 2011, pp. 62--74.
-
-\bibitem{marzolla2011}
-M.~Marzolla, O.~Babaoglu, and F.~Panzieri, ``Server consolidation in clouds
-  through gossiping,'' in \emph{World of Wireless Mobile and Multimedia
-  Networks (WoWMoM)}, 2011, pp. 1--6.
-
-\bibitem{zhang2011}
-F.~Zhang, J.~Chen, H.~Chen, and B.~Zang, ``Cloudvisor: Retrofitting protection
-  of virtual machines in multi-tenant cloud with nested virtualization,'' in
-  \emph{Proceedings of the 23rd ACM Symposium on Operating Systems Principles},
-  2011, pp. 203--216.
 
 \end{thebibliography}

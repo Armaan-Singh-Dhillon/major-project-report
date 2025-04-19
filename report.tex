@@ -24,12 +24,14 @@
 \setcounter{tocdepth}{3}     % Table of contents depth
 \setlength{\parindent}{0pt}
 \renewcommand{\baselinestretch}{1.5}  % Line spacing
+\renewcommand{\lstlistingname}{Code}
+\renewcommand{\lstlistlistingname}{List of Code Blocks }
+
 
 % Define Code Block Style
 \lstdefinestyle{mystyle}{
     commentstyle=\color{gray},
-    keywordstyle=\color{blue}\bfseries,
-    stringstyle=\color{red},
+    keywordstyle=\bfseries,
     basicstyle=\ttfamily\footnotesize, % Change font to Courier New
     breaklines=true,                   
     captionpos=b,                      
@@ -150,26 +152,49 @@ I also want to express my gratitude to all the instructors and staff at the NIT 
 I would like to extend my sincere gratitude to my colleagues and seniors for their valuable suggestions and encouragement, which helped me complete my thesis work.
 
 \begin{abstract}
-  Home automation using Raspberry Pi has gained popularity due to its low cost and capacity to improve convenience and energy efficiency.  This concept combines a smart home automation system with blockchain technology to enable safe and transparent energy invoicing.  The system gathers energy usage data from a smart energy meter linked to an Arduino and sends it to a cloud-based IoT platform via MQTT and REST APIs for real-time monitoring.This data is retrieved by a Web3 application, which then interacts with an Ethereum smart contract to securely produce and handle energy invoices.  Using blockchain technology, the system assures transparency, security, and decentralization in energy transactions.  The integration of IoT and smart contracts eliminates intermediaries, lowering operating costs and increasing efficiency.  This study exhibits a seamless transition from data collecting to invoicing and payment in a decentralized context, which helps to enhance smart energy management solutions.
-
-
+    Home automation utilizing Raspberry Pi has grown in popularity due to its low cost and capacity to improve convenience and energy efficiency.  However, many existing home automation systems suffer severe issues, such as inadequate security, restricted interoperability, lengthy configuration processes, and insufficient real-time energy monitoring.  This project overcomes these restrictions by creating a smart home automation system that combines Raspberry Pi, ThingsBoard, Docker, and real-time sensor data to deliver a safe, modular, and scalable solution.
+    
+    The system collects energy usage data from sensors linked to a smart energy meter and delivers it to a cloud-based IoT platform using MQTT and REST APIs.  ThingsBoard enables real-time visualization and control via customisable dashboards, while Docker ensures modular deployment and service separation.  The use of encrypted communication protocols improves security, while the open-source, protocol-agnostic architecture allows for smooth integration of numerous devices.  This project provides a realistic and efficient solution to modern home automation by simplifying system setup and enabling real-time monitoring and automation, resulting in improved energy management and user accessibility.
 \end{abstract}
+    
 
 \tableofcontents
-\listoftables
 \listoffigures
 \newpage
 
 \chapter{Introduction}
-Home automation using Raspberry Pi has gained popularity due to its numerous advantages and cost-effectiveness. These systems provide users with the ability to control household appliances through local networks or remote access, thereby enhancing convenience and energy efficiency\cite{jain2014raspberry}. 
 
-Modern home automation technologies offer automatic meter reading, real-time monitoring, and remote control of electrical connections without the need for personal involvement\cite{chaudhari2017smart}.  The integration of Arduino controllers with GSM modules improves data transmission, allowing power companies to track energy use in kilowatt-hours (kWh) and create billing information\cite{rahman2015arduino}.
+Home automation using Raspberry Pi has gained popularity due to its numerous advantages and cost-effectiveness. These systems provide users with the ability to control household appliances through local networks or remote access, thereby enhancing convenience and energy efficiency\cite{jain2014raspberry}. Modern home automation technologies offer features such as automatic meter reading, real-time monitoring, and remote control of electrical connections without the need for personal involvement\cite{chaudhari2017smart}.In addition to energy monitoring, home automation systems commonly include sensors, cameras, and web-based applications to increase security and enable comprehensive device control\cite{patchava2015smart}. The MQTT protocol, known for its lightweight and reliable messaging, is frequently used in IoT-based systems to improve data quality and communication reliability\cite{Atmoko_2017}.
 
-In addition to energy monitoring, home automation systems include sensors, cameras, and web-based applications to increase security and device control\cite{patchava2015smart}.  Real-time data gathering and storage in databases, such as MySQL, ensures accurate monitoring and analysis.  The use of the MQTT protocol improves data quality and dependability in IoT-based systems\cite{Atmoko_2017}.
+Despite these developments, there are still certain limits in existing home automation options.  Many systems continue to have insufficient encryption and access control, leaving them vulnerable to illegal access.  Proprietary communication protocols and restricted integration possibilities further impede interoperability across devices from different manufacturers.  Furthermore, extensive setup processes and non-intuitive user interfaces make it difficult for non-technical individuals to access and operate.
 
-Blockchain and smart contracts have emerged as disruptive technologies with the potential to transform many sectors.  Smart contracts are self-executing programs that autonomously enforce contractual conditions without the need for intermediaries, improving efficiency and lowering operational expenses\cite{10.1145/3328833.3328857}.  These technologies offer advantages such as transparency, security, and decentralization, making them appropriate for a wide range of applications, from identity management to business process automation\cite{chaudhari2017smart}.
+This project addresses these challenges by creating a smart home automation system using Raspberry Pi, Docker, ThingsBoard, and real-time sensor data.  The use of encrypted MQTT assures safe communication, while Docker containers enable modular deployment and service isolation.  ThingsBoard supports protocol-agnostic integration and user-friendly dashboards, easing system maintenance and customization.  The system's real-time monitoring and automation aims to increase energy efficiency, user experience, and support for a scalable, cost-effective, and open-source approach to home automation.
 
-Home automation systems that combine IoT with blockchain-based smart contracts can improve trust and security in energy management.  This project investigates the integration of a smart energy meter with a blockchain-based billing system, using Raspberry Pi, IoT platforms, and Ethereum smart contracts to create a decentralized, transparent, and automated energy billing solution.
+
+\chapter{Problem Statement and Proposed Solution}
+
+\section{Problem Statement}
+
+Smart home automation has received a lot of interest in recent years because of its ability to improve energy efficiency, increase convenience, and enable cognitive management over household appliances.  Despite significant development in this area, current systems suffer a number of ongoing problems that restrict their effectiveness and widespread acceptance.
+
+One of the primary considerations is security.  Existing systems frequently use inadequate encryption standards and lack effective access control measures.  This makes the system susceptible to unwanted access, data breaches, and manipulation of essential home systems.  Furthermore, interoperability presents a substantial challenge.  Many commercial smart home solutions use proprietary communication protocols and closed designs, making it impossible to integrate devices from other suppliers or expand the system without encountering compatibility concerns.
+
+Another important factor to consider is user experience.  Many smart home systems are difficult to set up and provide little customization, discouraging non-technical consumers from embracing and efficiently utilizing new technologies.  Finally, energy efficiency remains a significant concern in many systems.  Limited support for real-time monitoring and control of energy consumption frequently leads to wasteful power consumption and higher operational costs.
+
+\section{Proposed Solution}
+
+To overcome these issues, a smart home automation solution was created that combines Raspberry Pi, ThingsBoard, Docker, and real-time sensor data.  This system seeks to be affordable, secure, flexible, and adaptable to a wide range of residential situations.
+
+The Raspberry Pi is the primary hardware platform, operating as a local controller and managing edge computing duties.  It supports sensor data gathering and communication with connected devices.  ThingsBoard, an open-source IoT platform, is used for device administration, real-time data visualization, and building interactive dashboards.  This platform supports several protocols and enables for simple customisation, addressing interoperability and user experience issues.
+
+Docker uses containerization to isolate services, improve system security, and simplify deployment and upgrades.  Each service operates in its own container, making the system more flexible and simple to manage or scale.  Real-time sensor integration enables continuous monitoring of environmental conditions and energy consumption, resulting in automation and increased energy efficiency.
+
+From a security standpoint, encrypted MQTT protocols are employed for data transmission, establishing a safe communication channel between devices and the cloud platform.  Docker-based service isolation provides an additional degree of safety, reducing possible risks from system flaws.
+
+In terms of interoperability, the system is intended to be protocol-agnostic and completely open source.  This enables the smooth integration of several devices, independent of manufacturer, and encourages vendor independence.  To improve the user experience, the platform includes visual dashboards with drag-and-drop widgets, allowing users to design and monitor their smart home environment with little technical knowledge.
+
+Real-time sensor data enables dynamic decision-making, allowing the system to respond immediately to changes in ambient conditions.  This improves energy efficiency by enabling context-aware automation, such as changing lighting or shutting off equipment when not in use.
+
 
 \chapter{Literature Survey}
 
@@ -391,7 +416,7 @@ The smart energy meter circuit is designed to measure and monitor power consumpt
 The Arduino is responsible for measuring voltage, current, and calculating power consumption in real-time. The analog pins read voltage and current sensor outputs, which are then converted into meaningful electrical values. The calculated power is then transmitted over serial communication.
 \clearpage
 
-\begin{lstlisting}[language=C]
+\begin{lstlisting}[language=C,caption={arduino code for energy calculations}]
 // Pin configuration
 const int voltagePin = A0; // Voltage sensor input
 const int currentPin = A1; // Current sensor input
@@ -429,7 +454,7 @@ void loop() {
 The Raspberry Pi is responsible for reading sensor data, controlling home appliances based on environmental conditions, and sending data to an IoT platform (ThingsBoard) using MQTT.
 \clearpage
 
-\begin{lstlisting}[language=Python]
+\begin{lstlisting}[language=Python,caption={Raspberry Pi Code Collects Sensor Data and Sends it over using MQTT}]
 import RPi.GPIO as GPIO
 import time
 import json
@@ -539,7 +564,7 @@ One of ThingsBoard's key features is the ability to build rules and plugins for 
  \subsection{Step 1: Define Connection Parameters}
  The first step is to configure the MQTT connection by specifying the ThingsBoard host, access token, and MQTT port. Replace the \texttt{ACCESS\_TOKEN} with the token obtained from the ThingsBoard device.
  
- \begin{lstlisting}
+ \begin{lstlisting}[caption={Connection Parameters as Environment Variables}]
  THINGSBOARD_HOST = "localhost"
  ACCESS_TOKEN = "dU6S0YIAPX5WwfmB3wUi"  # Replace with your actual token
  MQTT_PORT = 1883
@@ -548,7 +573,7 @@ One of ThingsBoard's key features is the ability to build rules and plugins for 
  \subsection{Step 2: Install and Import MQTT Library}
  After setting up the connection parameters, ensure that the \texttt{paho-mqtt} library is installed. This library is required to establish an MQTT connection. Once installed, import the necessary modules in the Python script.
  
- \begin{lstlisting}
+ \begin{lstlisting}[caption={Importing MQTT using Python}]
  import paho.mqtt.client as mqtt
  import json
  \end{lstlisting}
@@ -556,7 +581,7 @@ One of ThingsBoard's key features is the ability to build rules and plugins for 
  \subsection{Step 3: Create MQTT Client and Connect}
  The next step is to create an MQTT client instance and authenticate using the access token. The client must then connect to the ThingsBoard host on the specified port.
  
- \begin{lstlisting}
+ \begin{lstlisting}[caption={Connecting MQTT to ThingsBoard using Device Token}]
  client = mqtt.Client()
  client.username_pw_set(ACCESS_TOKEN)  # Use Access Token for authentication
  client.connect(THINGSBOARD_HOST, MQTT_PORT, 60)
@@ -565,7 +590,7 @@ One of ThingsBoard's key features is the ability to build rules and plugins for 
  \subsection{Step 4: Publish Sensor Data}
  Once connected, sensor data must be prepared in JSON format and published to the ThingsBoard MQTT topic. The following code snippet demonstrates how to send temperature and humidity data.
  
- \begin{lstlisting}
+ \begin{lstlisting}[caption={Sending Telemetry Response in JSON}]
  telemetry_data = {"current": 14.919, "fan_status": 0,"gas_detected":0,"light":61,"motion":1,"power":3493.48,"power_factor":0.98,"temperature":27.85}
  client.publish("v1/devices/me/telemetry", json.dumps(telemetry_data))
  print("Data sent successfully!")
@@ -608,7 +633,7 @@ One of ThingsBoard's key features is the ability to build rules and plugins for 
  \subsection{Step 1: Generate Access Token}
  The first step is to authenticate with ThingsBoard and obtain an access token. This is done by sending a POST request to the authentication API with valid credentials. The request should be formatted in JSON, containing a username and password.
  
- \begin{lstlisting}
+ \begin{lstlisting}[caption={Content for Body of POST Request}]
  POST http://localhost:9090/api/auth/login
  Content-Type: application/json
  
@@ -621,7 +646,7 @@ One of ThingsBoard's key features is the ability to build rules and plugins for 
  \subsection{Step 2: Extract JWT Token}
  Once the authentication request is processed, the API will return a response containing a JWT token. This token is essential for making authorized requests to ThingsBoard. The response will be in JSON format, and the token can be extracted from the \texttt{token} field.
  
- \begin{lstlisting}
+ \begin{lstlisting}[caption={Response of POST Request}]
  {
      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI...",
      "refreshToken": "eyJhbGciOiJIUzI1NiIsIn..."
@@ -631,7 +656,7 @@ One of ThingsBoard's key features is the ability to build rules and plugins for 
  \subsection{Step 3: Fetch Telemetry Data}
  After obtaining the authentication token, the next step is to retrieve telemetry data from a specific device. The device ID must be specified in the request URL, and the JWT token must be included in the request headers under the \texttt{X-Authorization} field. The following JavaScript code demonstrates how to fetch power telemetry data from a ThingsBoard device.
  
- \begin{lstlisting}
+ \begin{lstlisting}[caption={Fetching Data from ThingsBoard using Token Authentication method}]
  const response = await fetch( 
      `http://localhost:9090/api/plugins/telemetry/DEVICE/0eb8ae80-ffe6-11ef-b36a-71656502eb9c/values/timeseries?keys=power`,
      {
@@ -743,67 +768,6 @@ Initially, blockchain was largely utilized for peer-to-peer financial transactio
 
  \section{Conclusion}
  Blockchain and smart contracts offer a secure and decentralized method to automation across a variety of industries, including energy bills.  Solidity allows for efficient contract construction, while Ethereum provides decentralized execution using gas estimation algorithms.  Tools like Remix IDE make smart contract deployment easier, and combining IoT and blockchain improves automation and transparency in energy management.  The combination of these technologies provides the door for a more efficient and secure system for handling digital transactions and automation.
-
-  
-
- \chapter{Ganache Toolchain}
-
-\section{Introduction to Ganache}
-Ganache is a personal Ethereum blockchain designed for testing and development.  It offers developers a local blockchain environment in which to build, test, and debug smart contracts before distributing them to a public or test network\cite{brightwell2015overview}.  Ganache is offered in two flavors: Ganache UI, which has a graphical interface, and Ganache CLI, a command-line tool for automation and scripting\cite{gibson2016review}.  It supports quick transactions, chain forking, and complete logging, making it a crucial tool for Ethereum development and testing\cite{wang2017review}.
-
-One of the primary benefits of Ganache is its ability to mine transactions instantly.  Unlike public testnets, which require confirmation time, Ganache handles transactions immediately, allowing for faster iterations during development.  It also offers pre-funded accounts, making it simple to test transactions without spending real or test ETH.  Furthermore, Ganache enables developers to change network characteristics like as gas price, block time, and transaction speed, providing greater flexibility for testing various scenarios.
-
-\section{Ethereum Testnets and Their Challenges}
-Ethereum testnets, such as Sepolia, Goerli, and Holesky, allow developers to test their smart contracts before releasing them to the Ethereum mainnet.  These testnets imitate real-world Ethereum settings, such as transaction processing, block validation, and gas fees, without incurring any monetary charges.
-
- Sepolia is now the most popular testnet for testing smart contracts.  However, one of the most difficult aspects of using Ethereum testnets is obtaining test ETH, which is needed to deploy contracts and execute transactions.  Unlike a local blockchain, such as Ganache, testnets require developers to request ETH from faucets, which are frequently unstable or have limited availability.  Furthermore, mining test ETH on proof-of-stake testnets such as Sepolia is impossible, forcing developers to rely on third-party sources.
-
-
-Another limitation of testnets is the network congestion and transaction confirmation time. Since multiple developers use these networks simultaneously, transactions may take longer to be confirmed, especially during high activity periods. This delays testing and debugging, making it harder to iterate quickly on smart contract development.
-
-\section{Why Ganache is Beneficial for Development}
-Ganache offers a speedier, more regulated, and cost-effective alternative to Ethereum testnets.  Unlike Sepolia and Goerli, which require real network confirmations, Ganache executes transactions instantly, allowing for faster testing and debugging.
-
-
-Developers can use Ganache to generate numerous pre-funded accounts, avoiding the need for test ETH. This makes it much easier to test smart contract features like payments, ownership transfers, and gas calculation.  Furthermore, because Ganache runs locally, there are no network congestion difficulties, resulting in a smoother development process.
-
-
-Another key advantage of Ganache is the ability to reset the blockchain state at any time.  When testing on a testnet like Sepolia, once a transaction is completed, it is permanently recorded on the blockchain.  However, Ganache allows developers to reset the blockchain and start over, making it perfect for frequent testing and debugging.
-
-
-\section{Usage of Ganache in the Project}
-Ganache served as the primary testing environment for the \textbf{EnergyBilling} smart contract before deployment to the Ethereum testnet. Since Ethereum smart contracts require gas fees for each transaction, testing on a local blockchain helped reduce unnecessary costs. The project workflow began with launching Ganache,which creates a private Ethereum blockchain. 
-
-Several pre-funded accounts were used to simulate user interactions with the contract. The Remix IDE was then connected to Ganache for contract compilation and deployment. This configuration enabled efficient testing of contract functionalities such as energy storage, bill computation, and payment, as illustrated in Figure\ref{fig:ganache_accounts}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{chain.PNG}
-\caption{Pre-funded accounts in Ganache}
-\label{fig:ganache_accounts}
-\end{figure}
-
-One of the key aspects analyzed using Ganache was gas estimation. Every smart contract function consumes gas, and understanding the cost of each action is crucial for optimization. Before deploying the contract to an actual testnet, modifications were made to minimize gas expenses using Ganache's transaction cost analysis, as shown in Figure~\ref{fig:ganache_transactions}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{contract creation.PNG}
-\caption{Transaction log in Ganache showing contract creation and function execution}
-\label{fig:ganache_transactions}
-\end{figure}
-
-Additionally, Ganache's instant transaction mining allowed for rapid testing iterations. Unlike Sepolia, where transactions take time to confirm, Ganache ensured that tests could be conducted quickly, leading to shorter development cycles. Figure~\ref{fig:ganache_blocks} illustrates the blockchain view in Ganache, showing the sequence of transactions and blocks mined during testing.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{trasnsactions.PNG}
-\caption{Blockchain view in Ganache displaying mined blocks and transactions}
-\label{fig:ganache_blocks}
-\end{figure}
-
-
-\section{Conclusion}
-Ganache is essential for Ethereum smart contract development because it provides a rapid, reliable, and cost-free testing environment.  While testnets such as Sepolia are required for final testing prior to mainnet deployment, they present issues such as procuring test ETH and coping with network latency.  Ganache addresses these concerns by offering a local blockchain with instant transactions, pre-funded accounts, and the option to reset the blockchain state.
 
 
 \chapter{Building the Web3 Application}
@@ -944,170 +908,19 @@ By integrating React with Web3.js, users can seamlessly communicate with the Eth
  \section{Conclusion}
  This Web3 application successfully integrates React, Ganache, and ThingsBoard to enable decentralized energy billing. It demonstrates the potential of blockchain for transparent and automated energy management.
 
-\chapter{Dockerizing the Complete System}
-\section{Introduction}
-Docker is an open-source platform that provides lightweight virtualization via Linux Containers (LXC). Docker containers, unlike typical virtual machines, share the host operating system kernel, which improves efficiency and portability. Namespaces for process separation, cgroups for resource management, and union file systems such as OverlayFS for efficient storage are all important technologies.
 
-Docker provides consistency across environments by packaging applications alongside their dependencies\cite{dana2011}, making it perfect for microservices, CI/CD pipelines, and cloud deployments \cite{marzolla2011}.  Its scalability and low overhead have transformed modern DevOps procedures\cite{zhang2011}.
+ \chapter{Conclusion and Future Scope}
 
-\section{Dockerization Process}
-
-Dockerization is the process of packaging an application and its dependencies into a container. It simplifies deployment, ensures consistency across environments, and facilitates scaling. In this project, we use Docker to containerize three main components: Ganache, ThingsBoard, and a React application.
-
-\subsection{Docker Compose}
-
-To orchestrate multiple containers, we use Docker Compose. The following YAML configuration defines the services required for this setup:
-
-\begin{lstlisting}[language=python]
-version: '3.8'
-
-services:
-  ganache:
-    image: trufflesuite/ganache
-    container_name: ganache
-    restart: always
-    ports:
-      - "8545:8545"
-    command: ["--db", "/ganache-data", "--mnemonic", "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat"]
-    volumes:
-      - ganache_data:/ganache-data
-    networks:
-      - app_network
-
-  thingsboard:
-    image: thingsboard/tb-postgres
-    container_name: thingsboard
-    restart: always
-    ports:
-      - "9090:9090"
-      - "1883:1883" # MQTT
-      - "5683:5683/udp" # CoAP
-    environment:
-      - DATABASE_TS_TYPE=sql
-      - HTTP_CORS_ALLOW_ORIGIN=*  # Enable CORS for ThingsBoard
-    volumes:
-      - tb-data:/data
-      - tb-logs:/var/log/thingsboard
-    networks:
-      - app_network
-
-  react-app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: react-app
-    restart: always
-    ports:
-      - "80:80"
-    depends_on:
-      - ganache
-      - thingsboard
-    env_file:
-      - .env
-    networks:
-      - app_network
-
-networks:
-  app_network:
-    driver: bridge
-
-volumes:
-  ganache_data:
-  tb-data:
-  tb-logs:
-\end{lstlisting}
-
-\noindent
-This configuration defines the following services:
-\begin{itemize}
-    \item \textbf{Ganache:} A blockchain development tool for Ethereum.
-    \item \textbf{ThingsBoard:} An IoT platform for data management.
-    \item \textbf{React App:} A front-end web application served using Nginx.
-\end{itemize}
-
-All services are connected using a shared network, \texttt{app\_network}, ensuring seamless inter-container communication.
-
-\subsection{Dockerfile}
-
-The front-end React application is built using a multi-stage process. The following \texttt{Dockerfile} specifies how the React app is built and served with Nginx:
-
-\begin{lstlisting}[language=python]
-# Stage 1: Build React App with Vite
-FROM node:18 AS build
-WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm install
-COPY . . 
-RUN npm run build
-
-# Stage 2: Serve with Nginx
-FROM nginx:alpine
-COPY --from=build /app/dist /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
-\end{lstlisting}
-
-\noindent
-The build process follows two stages:
-\begin{enumerate}
-    \item In the first stage, Node.js is used to install dependencies and build the React application.
-    \item In the second stage, the built application is copied into an Nginx container to serve it efficiently.
-\end{enumerate}
-
-\subsection{Running the Containers}
-
-Once the configuration is complete, the following command is used to start all containers:
-
-\begin{lstlisting}[language=bash]
-docker-compose up -d
-\end{lstlisting}
-
-To verify that the containers are running, use:
-
-\begin{lstlisting}[language=bash]
-docker ps
-\end{lstlisting}
-
-If there are updates to the React application or other services, rebuild and restart the containers using:
-
-\begin{lstlisting}[language=bash]
-docker-compose up --build -d
-\end{lstlisting}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{docker container.PNG}
-    \caption{Docker Containers}
-    \end{figure}
-
-\subsection{Stopping and Removing Containers}
-
-To stop all running containers, use:
-
-\begin{lstlisting}[language=bash]
-docker-compose down
-\end{lstlisting}
-
-To remove all containers, networks, and volumes, use:
-
-\begin{lstlisting}[language=bash]
-docker-compose down -v
-\end{lstlisting}
-
-\section{Conclusion}
-
-Dockerization provides a scalable and efficient way to manage applications by encapsulating dependencies in containers. It simplifies deployment, ensures consistency across environments, and allows for seamless integration between components. By using Docker Compose, we streamline the management of multiple services, making the development and deployment process more efficient.
-
-\chapter{Future Scope}
-The proposed smart home automation system can be improved by incorporating advanced technologies and improving its capabilities.  One important enhancement is the incorporation of smart grid technology, which enables homeowners to share excess solar energy with neighbors via blockchain-based smart contracts.  This peer-to-peer energy trading model improves energy efficiency and encourages sustainable living.  Furthermore, demand-response systems can be used to optimize energy consumption based on real-time grid circumstances, resulting in improved load management and less energy waste.
-Another area for improvement is the combination of solar energy with water pumping systems.  By adding solar panel monitoring, the system can effectively measure energy generation and automate energy distribution to various home appliances.  Smart water pumping systems can also be incorporated to efficiently regulate water usage, resulting in optimal operation based on energy supply and demand.  This not only minimizes reliance on traditional power sources, but also fosters a self-sustaining smart home ecosystem.
-
-Furthermore, upgrading to a sophisticated microcontroller with built-in Wi-Fi, such as the ESP32 or other IoT-enabled hardware, can considerably boost system performance.  These microcontrollers outperform the Raspberry Pi in terms of processing power, connectivity, and power consumption, making them perfect for real-time IoT applications.  The use of such hardware would improve the scalability, efficiency, and ease of deployment of future smart home automation solutions.
-
-
-\chapter{Conclusion}
-The integration of IoT, blockchain, and smart energy management into home automation has the potential to transform how energy is consumed and billed.  This project uses a decentralized approach to assure openness, security, and efficiency in energy transactions while eliminating reliance on intermediaries.  Smart contracts simplify billing processes, making energy management more efficient and cost-effective.
-
-Looking ahead, adding community energy sharing, solar and water management, and better microcontrollers will improve the system's capabilities and practicality.  As smart homes evolve, integrating more sustainable and intelligent solutions will result in a more efficient and environmentally friendly future.  This project is a first step toward a completely automated and decentralized smart energy management system, paving the door for future advancements in home automation and energy distribution.
+This study highlights how combining IoT and smart energy management with home automation may revolutionize energy use, monitoring, and billing.  The system uses real-time data and automation to assure transparency, efficiency, and accuracy in energy monitoring and invoicing, making energy management more streamlined and cost-effective.
+ 
+Building on this foundation, the suggested smart home automation system can be greatly improved by using new technology.  One interesting possibility is the integration of smart grid capabilities, which allows households to exchange excess solar energy within a local network.  This peer-to-peer energy sharing approach encourages sustainable living while increasing overall energy efficiency.
+ 
+Additional advances include the implementation of demand-response systems, which alter energy usage based on real-time grid circumstances, resulting in improved load control and less energy waste.  Furthermore, combining solar energy and smart water pumping technologies can help to create a more self-sufficient household ecosystem.  Solar panel monitoring would enable precise assessment of energy generation and automated distribution to home appliances, while intelligent water pumps could regulate consumption based on supply and demand.
+ 
+Another area for improvement is updating the hardware infrastructure.  Switching to more powerful microcontrollers, such as the ESP32 or other IoT-enabled devices, can greatly improve performance.  These devices outperform the Raspberry Pi in terms of computing power, energy consumption, and built-in connection, making them ideal for real-time and scalable IoT applications.
+ 
+ 
+ 
 
 
 \newpage
