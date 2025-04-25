@@ -161,40 +161,66 @@ I would like to extend my sincere gratitude to my colleagues and seniors for the
 \tableofcontents
 \listoffigures
 \newpage
-
 \chapter{Introduction}
+\section{Introduction}
+Home automation using Raspberry Pi has gained popularity due to its numerous advantages and cost-effectiveness. These systems provide users with the ability to control household appliances through local networks or remote access, thereby enhancing convenience and energy efficiency\cite{jain2014raspberry}. Modern home automation technologies offer features such as automatic meter reading, real-time monitoring, and remote control of electrical connections without the need for personal involvement\cite{chaudhari2017smart}. In addition to energy monitoring, home automation systems commonly include sensors, cameras, and web-based applications to increase security and enable comprehensive device control\cite{patchava2015smart}. The MQTT protocol, known for its lightweight and reliable messaging, is frequently used in IoT-based systems to improve data quality and communication reliability\cite{Atmoko_2017}.
 
-Home automation using Raspberry Pi has gained popularity due to its numerous advantages and cost-effectiveness. These systems provide users with the ability to control household appliances through local networks or remote access, thereby enhancing convenience and energy efficiency\cite{jain2014raspberry}. Modern home automation technologies offer features such as automatic meter reading, real-time monitoring, and remote control of electrical connections without the need for personal involvement\cite{chaudhari2017smart}.In addition to energy monitoring, home automation systems commonly include sensors, cameras, and web-based applications to increase security and enable comprehensive device control\cite{patchava2015smart}. The MQTT protocol, known for its lightweight and reliable messaging, is frequently used in IoT-based systems to improve data quality and communication reliability\cite{Atmoko_2017}.
+Despite these developments, there are still certain limits in existing home automation options. Many systems continue to have insufficient encryption and access control, leaving them vulnerable to illegal access. Proprietary communication protocols and restricted integration possibilities further impede interoperability across devices from different manufacturers. Furthermore, extensive setup processes and non-intuitive user interfaces make it difficult for non-technical individuals to access and operate.
 
-Despite these developments, there are still certain limits in existing home automation options.  Many systems continue to have insufficient encryption and access control, leaving them vulnerable to illegal access.  Proprietary communication protocols and restricted integration possibilities further impede interoperability across devices from different manufacturers.  Furthermore, extensive setup processes and non-intuitive user interfaces make it difficult for non-technical individuals to access and operate.
-
-This project addresses these challenges by creating a smart home automation system using Raspberry Pi, Docker, ThingsBoard, and real-time sensor data.  The use of encrypted MQTT assures safe communication, while Docker containers enable modular deployment and service isolation.  ThingsBoard supports protocol-agnostic integration and user-friendly dashboards, easing system maintenance and customization.  The system's real-time monitoring and automation aims to increase energy efficiency, user experience, and support for a scalable, cost-effective, and open-source approach to home automation.
-
-
-\chapter{Problem Statement and Proposed Solution}
+This project addresses these challenges by creating a smart home automation system using Raspberry Pi, Docker, ThingsBoard, and real-time sensor data. The use of encrypted MQTT assures safe communication, while Docker containers enable modular deployment and service isolation. ThingsBoard supports protocol-agnostic integration and user-friendly dashboards, easing system maintenance and customization. The system's real-time monitoring and automation aims to increase energy efficiency, user experience, and support for a scalable, cost-effective, and open-source approach to home automation.
 
 \section{Problem Statement}
 
-Smart home automation has received a lot of interest in recent years because of its ability to improve energy efficiency, increase convenience, and enable cognitive management over household appliances.  Despite significant development in this area, current systems suffer a number of ongoing problems that restrict their effectiveness and widespread acceptance.
+Smart home automation has received a lot of interest in recent years because of its ability to improve energy efficiency, increase convenience, and enable cognitive management over household appliances. Despite significant development in this area, current systems suffer a number of ongoing problems that restrict their effectiveness and widespread acceptance.
 
-One of the primary considerations is security.  Existing systems frequently use inadequate encryption standards and lack effective access control measures.  This makes the system susceptible to unwanted access, data breaches, and manipulation of essential home systems.  Furthermore, interoperability presents a substantial challenge.  Many commercial smart home solutions use proprietary communication protocols and closed designs, making it impossible to integrate devices from other suppliers or expand the system without encountering compatibility concerns.
+One of the primary considerations is security. Existing systems frequently use inadequate encryption standards and lack effective access control measures. This makes the system susceptible to unwanted access, data breaches, and manipulation of essential home systems. Furthermore, interoperability presents a substantial challenge. Many commercial smart home solutions use proprietary communication protocols and closed designs, making it impossible to integrate devices from other suppliers or expand the system without encountering compatibility concerns.
 
-Another important factor to consider is user experience.  Many smart home systems are difficult to set up and provide little customization, discouraging non-technical consumers from embracing and efficiently utilizing new technologies.  Finally, energy efficiency remains a significant concern in many systems.  Limited support for real-time monitoring and control of energy consumption frequently leads to wasteful power consumption and higher operational costs.
+Another important factor to consider is user experience. Many smart home systems are difficult to set up and provide little customization, discouraging non-technical consumers from embracing and efficiently utilizing new technologies. Finally, energy efficiency remains a significant concern in many systems. Limited support for real-time monitoring and control of energy consumption frequently leads to wasteful power consumption and higher operational costs.
 
 \section{Proposed Solution}
 
-To overcome these issues, a smart home automation solution was created that combines Raspberry Pi, ThingsBoard, Docker, and real-time sensor data.  This system seeks to be affordable, secure, flexible, and adaptable to a wide range of residential situations.
+To overcome these issues, a smart home automation solution was created that combines Raspberry Pi, ThingsBoard, Docker, and real-time sensor data. This system seeks to be affordable, secure, flexible, and adaptable to a wide range of residential situations.
 
-The Raspberry Pi is the primary hardware platform, operating as a local controller and managing edge computing duties.  It supports sensor data gathering and communication with connected devices.  ThingsBoard, an open-source IoT platform, is used for device administration, real-time data visualization, and building interactive dashboards.  This platform supports several protocols and enables for simple customisation, addressing interoperability and user experience issues.
+The Raspberry Pi is the primary hardware platform, operating as a local controller and managing edge computing duties. It supports sensor data gathering and communication with connected devices. ThingsBoard, an open-source IoT platform, is used for device administration, real-time data visualization, and building interactive dashboards. This platform supports several protocols and enables for simple customisation, addressing interoperability and user experience issues.
 
-Docker uses containerization to isolate services, improve system security, and simplify deployment and upgrades.  Each service operates in its own container, making the system more flexible and simple to manage or scale.  Real-time sensor integration enables continuous monitoring of environmental conditions and energy consumption, resulting in automation and increased energy efficiency.
+Docker uses containerization to isolate services, improve system security, and simplify deployment and upgrades. Each service operates in its own container, making the system more flexible and simple to manage or scale. Real-time sensor integration enables continuous monitoring of environmental conditions and energy consumption, resulting in automation and increased energy efficiency.
 
-From a security standpoint, encrypted MQTT protocols are employed for data transmission, establishing a safe communication channel between devices and the cloud platform.  Docker-based service isolation provides an additional degree of safety, reducing possible risks from system flaws.
+From a security standpoint, encrypted MQTT protocols are employed for data transmission, establishing a safe communication channel between devices and the cloud platform. Docker-based service isolation provides an additional degree of safety, reducing possible risks from system flaws.
 
-In terms of interoperability, the system is intended to be protocol-agnostic and completely open source.  This enables the smooth integration of several devices, independent of manufacturer, and encourages vendor independence.  To improve the user experience, the platform includes visual dashboards with drag-and-drop widgets, allowing users to design and monitor their smart home environment with little technical knowledge.
+In terms of interoperability, the system is intended to be protocol-agnostic and completely open source. This enables the smooth integration of several devices, independent of manufacturer, and encourages vendor independence. To improve the user experience, the platform includes visual dashboards with drag-and-drop widgets, allowing users to design and monitor their smart home environment with little technical knowledge.
 
-Real-time sensor data enables dynamic decision-making, allowing the system to respond immediately to changes in ambient conditions.  This improves energy efficiency by enabling context-aware automation, such as changing lighting or shutting off equipment when not in use.
+Real-time sensor data enables dynamic decision-making, allowing the system to respond immediately to changes in ambient conditions. This improves energy efficiency by enabling context-aware automation, such as changing lighting or shutting off equipment when not in use.
 
+\section{Project Workflow}
+
+This section depicts the workflow of a smart home automation system that is coupled with blockchain for energy billing. The smart meter captures energy usage data, which is then transmitted to a cloud-based IoT platform for real-time monitoring\cite{jain2014raspberry}\cite{chaudhari2017smart}. Data is processed using MQTT and REST APIs to ensure reliability\cite{Atmoko_2017}.
+
+A Web3 application obtains this information and communicates with an Ethereum smart contract to generate energy bills in a secure and transparent manner\cite{10.1145/3328833.3328857}\cite{Hu2018BlockchainbasedSC}. By merging IoT and blockchain, the solution automates billing and payments, increasing efficiency and security.
+
+\subsection{System Architecture}
+
+The architecture consists of multiple interconnected components, including sensors, microcontrollers, cloud platforms, and blockchain technology. The data flow and interactions are illustrated in Figure~\ref{fig:workflow}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{basicArchitecture.png}
+    \caption{System Workflow}
+    \label{fig:workflow}
+\end{figure}
+
+\subsection{Components and Data Flow}
+
+\paragraph{Energy Measurement and Data Acquisition:} The system starts with an Arduino connected to a smart energy meter, which measures power consumption. Since Arduino lacks a built-in analog-to-digital converter (ADC) with the required resolution, an external ADC is used for accurate readings. The measured data is then transmitted to a Raspberry Pi for further processing.
+
+\paragraph{Data Transmission and Storage:} This section illustrates the workflow of a smart home automation system that is integrated with blockchain for energy billing. The system's goal is to collect energy consumption data, store it in a cloud-based IoT platform, and bill and pay using a Web3 application that interacts with an Ethereum blockchain smart contract.
+
+\paragraph{Web3 Integration and Smart Contracts:} A Web3 application fetches energy consumption data from ThingsBoard via HTTP requests. The retrieved energy data is then stored in a smart contract deployed on the Ethereum blockchain. The smart contract automatically generates an energy bill based on the stored consumption values.
+
+\paragraph{Billing and Payment System:} Using HTTP queries, a Web3 application retrieves energy usage data from ThingsBoard. A smart contract that is implemented on the Ethereum blockchain then stores the energy data that has been recovered. Using the saved consumption values, the smart contract automatically creates an energy bill.
+
+\section{Conclusion}
+
+This process combines blockchain, cloud computing, and the Internet of Things to produce an automated and decentralized energy billing system. An effective and transparent billing procedure is made possible by the modular architecture, which facilitates smooth data flow from energy monitoring to smart contract interactions.
 
 \chapter{Literature Survey}
 
@@ -267,49 +293,6 @@ The proposed smart home automation solution utilizes Raspberry Pi, ThingsBoard, 
 Smart home automation is always evolving, with substantial advances in device capabilities, cloud integration, and automation intelligence.  However, difficulties such as security vulnerabilities, device compatibility, usability, and energy management continue to impede large-scale adoption.  Existing literature identifies these difficulties, but often lacks practical remedies.
 
 This project provides a comprehensive, technically competent response to these difficulties.  It provides a realistic framework that corresponds with academic research concepts while boosting scalability, dependability, and user empowerment by integrating open-source platforms, containerized infrastructure, and real-time sensor-cloud communication.
-
-\chapter{Project Workflow}
-
-\section{Overview}
-
-This chapter depicts the workflow of a smart home automation system that is coupled with blockchain for energy billing.  The smart meter captures energy usage data, which is then transmitted to a cloud-based IoT platform for real-time monitoring\cite{jain2014raspberry}\cite{chaudhari2017smart}.  Data is processed using MQTT and REST APIs to ensure reliability\cite{Atmoko_2017}.
-
- A Web3 application obtains this information and communicates with an Ethereum smart contract to generate energy bills in a secure and transparent manner\cite{10.1145/3328833.3328857}\cite{Hu2018BlockchainbasedSC}.  By merging IoT and blockchain, the solution automates billing and payments, increasing efficiency and security.
-
-
-\section{System Architecture}
-
-The architecture consists of multiple interconnected components, including sensors, microcontrollers, cloud platforms, and blockchain technology. The data flow and interactions are illustrated in Figure~\ref{fig:workflow}.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.9\textwidth]{basicArchitecture.png}
-    \caption{System Workflow}
-    \label{fig:workflow}
-\end{figure}
-
-\section{Components and Data Flow}
-
-\subsection{Energy Measurement and Data Acquisition}
-
-The system starts with an Arduino connected to a smart energy meter, which measures power consumption. Since Arduino lacks a built-in analog-to-digital converter (ADC) with the required resolution, an external ADC is used for accurate readings. The measured data is then transmitted to a Raspberry Pi for further processing.
-
-\subsection{Data Transmission and Storage}
-
-This chapter illustrates the workflow of a smart home automation system that is integrated with blockchain for energy billing.  The system's goal is to collect energy consumption data, store it in a cloud-based IoT platform, and bill and pay using a Web3 application that interacts with an Ethereum blockchain smart contract.
-
-\subsection{Web3 Integration and Smart Contracts}
-
-A Web3 application fetches energy consumption data from ThingsBoard via HTTP requests. The retrieved energy data is then stored in a smart contract deployed on the Ethereum blockchain. The smart contract automatically generates an energy bill based on the stored consumption values.
-
-\subsection{Billing and Payment System}
-
-Using HTTP queries, a Web3 application retrieves energy usage data from ThingsBoard.  A smart contract that is implemented on the Ethereum blockchain then stores the energy data that has been recovered.  Using the saved consumption values, the smart contract automatically creates an energy bill.
-
-\section{Conclusion}
-
-This process combines blockchain, cloud computing, and the Internet of Things to produce an automated and decentralized energy billing system.  An effective and transparent billing procedure is made possible by the modular architecture, which facilitates smooth data flow from energy monitoring to smart contract interactions.
-
 
 \chapter{Proteus Schematic Design and Simulation}
 
@@ -672,25 +655,16 @@ One of ThingsBoard's key features is the ability to build rules and plugins for 
  \section{Conclusion}
  Integrating ThingsBoard with MQTT allows for efficient and secure real-time data transmission for IoT devices. By following the methods mentioned, devices can authenticate, publish telemetry data, and take advantage of ThingsBoard's monitoring and automation capabilities. This lightweight and scalable strategy improves IoT installations by providing consistent connectivity while also allowing for future enhancements such as encryption and improved data handling.
 
-\chapter{Blockchain and Smart Contracts}
-\section{Introduction to Blockchain}
-Blockchain is a fast developing technology for safe, transparent, and decentralized data management. It is based on three core components: private key cryptography, peer-to-peer networking, and smart contracts\cite{swan2016blockchain}. Transactions are encrypted with cryptographic keys, validated by distributed nodes, and kept immutably, making blockchain immune to fraud and illegal changes\cite{tern2021survey}.
-Initially, blockchain was largely utilized for peer-to-peer financial transactions, as demonstrated by Bitcoin.  However, in 2013, Ethereum launched smart contracts, which allow for the automatic implementation of agreements without the use of middlemen\cite{yuan2018shadoweth}.  These self-executing contracts specify the terms and circumstances of a transaction while ensuring efficiency, security, and dependability\cite{falazi2020smart}.
+ \chapter{Blockchain and Smart Contracts}
 
- Smart contracts have transformed businesses by allowing for smooth transactions in fields such as finance, supply chain management, and digital asset exchanges.  By eliminating intermediaries, they save money, boost transparency, and build confidence among participants\cite{johari2021smart}.  Blockchain and smart contracts are becoming increasingly popular, opening up new opportunities for safe and efficient digital transactions.
-
-
-
- \section{Advantages of Blockchain and Smart Contracts}
- Blockchain technology offers numerous advantages, including decentralization, security, transparency, and immutability. Since blockchain operates on a distributed ledger, there is no single point of failure, reducing the risk of downtime and attacks. Transactions recorded on the blockchain are secure due to cryptographic hashing, ensuring data integrity. Transparency is another key advantage, as all transactions are publicly verifiable and tamper-proof. Additionally, blockchain eliminates intermediaries, making financial transactions more efficient and cost-effective.
+ \section{Introduction}
+ Blockchain is a decentralized, transparent, and secure technology for managing digital transactions. It combines cryptography, peer-to-peer networks, and consensus mechanisms to ensure that data is immutable and fraud-resistant\cite{swan2016blockchain}\cite{tern2021survey}.Smart contracts, introduced by Ethereum in 2013, are self-executing contracts with code-defined terms. These remove the need for intermediaries and allow for efficient and secure automation of processes in industries such as finance, energy, and logistics\cite{yuan2018shadoweth}\cite{falazi2020smart}\cite{johari2021smart}.
  
- Smart contracts further enhance the blockchain ecosystem by automating and enforcing agreements without requiring intermediaries. They execute predefined conditions and ensure that transactions occur only when the conditions are met. This eliminates the need for third parties such as banks, legal entities, or brokers, thus reducing costs and increasing efficiency. Smart contracts also provide trust and security as they are immutable once deployed on the blockchain.
- 
- \section{Solidity Basics}
- Solidity is a high-level programming language used for writing smart contracts on Ethereum. It is statically typed and influenced by JavaScript, Python, and C++. Solidity contracts consist of state variables, functions, events, and modifiers. 
+ \section{Advantages}
+ Blockchain enables decentralization, immutability, and transparency.  Its distributed architecture eliminates single points of failure and enables tamper-proof, cryptographically secure data.  Smart contracts increase efficiency by enforcing logic directly on-chain, decreasing dependency on third parties.
  
  \section{Smart Contract Deployed in the Project}
- Below is an example of a Solidity smart contract implementing an energy billing system:
+ The following Solidity contract was deployed to implement a decentralized energy billing system:
  
  \begin{lstlisting}
  // SPDX-License-Identifier: MIT
@@ -698,10 +672,10 @@ Initially, blockchain was largely utilized for peer-to-peer financial transactio
  
  contract EnergyBilling {
      address public owner;
-     mapping(address => uint256) public userEnergy; // Stores energy consumption per user
-     mapping(address => uint256) public userBills; // Stores the bill amount per user
+     mapping(address => uint256) public userEnergy;
+     mapping(address => uint256) public userBills;
  
-     uint256 public constant RATE_PER_KWH = 2; // Cost per kWh (Example: 2 Wei per kWh)
+     uint256 public constant RATE_PER_KWH = 2;
  
      event EnergyStored(address indexed user, uint256 energy);
      event BillPaid(address indexed user, uint256 amount);
@@ -712,7 +686,7 @@ Initially, blockchain was largely utilized for peer-to-peer financial transactio
      }
  
      constructor() {
-         owner = msg.sender; // Set contract deployer as owner
+         owner = msg.sender;
      }
  
      function storeEnergy(uint256 _totalEnergy) public {
@@ -732,54 +706,15 @@ Initially, blockchain was largely utilized for peer-to-peer financial transactio
          uint256 billAmount = userBills[msg.sender];
          require(msg.value == billAmount, "Incorrect payment amount");
  
-         userBills[msg.sender] = 0; // Reset bill after payment
+         userBills[msg.sender] = 0;
  
          emit BillPaid(msg.sender, msg.value);
      }
  }
  \end{lstlisting}
  
- This contract allows users to store their energy consumption, calculate their bill, and make payments. It ensures security and automation of energy billing transactions.
- 
- \section{Ethereum and Gas Estimation}
- Ethereum is a decentralized platform for smart contract execution. It uses Ether (ETH), the network's currency. To execute a smart contract, users must pay gas fees, which compensate miners for their computational efforts. Gas costs vary depending on network congestion and contract complexity.
- 
- Each operation in Solidity has a distinct gas cost. For example, storing data on-chain is more expensive than performing computations. Gas estimation helps developers optimize contracts by identifying operations that consume excessive gas. Tools such as Remix IDE and Ethereum testnets provide gas estimation functionality to improve contract efficiency. A visual representation of gas estimation in Remix IDE is shown in Figure~\ref{fig:gas_estimation}.
- 
- \begin{figure}[H]
- \centering
- \includegraphics[width=1\textwidth]{gas price.PNG}
- \caption{Gas Tracker for Ethereum Sepolia}
- \label{fig:gas_estimation}
- \end{figure}
- 
- \section{Remix IDE and Smart Contract Deployment}
- Remix IDE is an online development environment for creating, building, deploying, and debugging smart contracts. It features a user-friendly interface and built-in Solidity compiler support, allowing developers to write and test contracts efficiently.
- 
- Remix also supports gas estimation, transaction debugging, and integration with Ethereum testnets. Developers can use Remix to deploy smart contracts, simulate transactions, and optimize gas usage before deploying them to the Ethereum mainnet. The deployment process in Remix IDE is illustrated in Figure~\ref{fig:remix_deployment}.
- 
- \begin{figure}[H]
- \centering
- \includegraphics[width=0.8\textwidth]{remix ide.PNG}
- \caption{Smart contract deployment in Remix IDE}
- \label{fig:remix_deployment}
- \end{figure}
-
-
- \section{Conclusion}
- Blockchain and smart contracts offer a secure and decentralized method to automation across a variety of industries, including energy bills.  Solidity allows for efficient contract construction, while Ethereum provides decentralized execution using gas estimation algorithms.  Tools like Remix IDE make smart contract deployment easier, and combining IoT and blockchain improves automation and transparency in energy management.  The combination of these technologies provides the door for a more efficient and secure system for handling digital transactions and automation.
-
-
-\chapter{Building the Web3 Application}
-\section{Introduction}
-The Internet has grown from a basic information-sharing platform to a global network that connects billions of people\cite{aria2023influential}\cite{nabben2023web3}\cite{murray2023promise}.  Web3 is emerging as the next phase, using blockchain technology to improve security, privacy, and user control\cite{tennakoon2023smart}\cite{sadowski2023expansive}.
-
- Unlike previous centralized systems, Web3 allows for direct peer-to-peer connections, decreasing dependency on middlemen.  It enables innovations such as decentralized apps (dApps), decentralized finance (DeFi), NFTs, and DAOs, which alter businesses\cite{cong2023inclusion}.
-
- Despite its potential, Web3 confronts obstacles such as scalability, restrictions, and environmental effect that must be addressed before widespread implementation\cite{lacity2023quiet}\cite{wang2023novel}.  This assessment examines Web3's accomplishments, prospects, and challenges, providing insight into its future.
-
- \section{Project Setup}
- We start by setting up a React project using Vite and installing the necessary dependencies:
+ \section{Web3 Application Setup}
+ The frontend for interacting with this contract was built using React and Web3.js. The initial setup was done using Vite:
  
  \begin{lstlisting}
  npm create vite@latest web3-app --template react
@@ -788,8 +723,8 @@ The Internet has grown from a basic information-sharing platform to a global net
  npm install web3 dotenv
  \end{lstlisting}
  
- \section{Connecting to Blockchain}
- We use Web3.js to interact with a smart contract deployed on Ganache. The connection is initialized using environment variables:
+ \section{Blockchain Connection and Data Interaction}
+ A Web3 connection to the smart contract was established using the following code snippet:
  
  \begin{lstlisting}
  import Web3 from "web3";
@@ -800,8 +735,7 @@ The Internet has grown from a basic information-sharing platform to a global net
  const account = import.meta.env.VITE_ACCOUNT;
  \end{lstlisting}
  
- \section{Fetching Energy Data}
- To get energy consumption data, we retrieve it from ThingsBoard using an API call:
+ Energy data is fetched from ThingsBoard:
  
  \begin{lstlisting}
  async function fetchEnergyData() {
@@ -815,12 +749,9 @@ The Internet has grown from a basic information-sharing platform to a global net
  }
  \end{lstlisting}
  
- \section{Interacting with the Smart Contract}
- Our smart contract supports three main functions: storing energy data, fetching the bill, and making payments.
+ \section{Smart Contract Interaction}
  
- \subsection{Storing Energy Data}
- The energy data is sent to the blockchain using the `storeEnergy` function:
- 
+ \subsection{Store Energy}
  \begin{lstlisting}
  async function sendEnergyData() {
      const tx = contract.methods.storeEnergy(energy);
@@ -838,19 +769,13 @@ The Internet has grown from a basic information-sharing platform to a global net
  }
  \end{lstlisting}
  
- \subsection{Fetching and Paying Bills}
- To check the pending bill amount:
- 
+ \subsection{Fetch and Pay Bill}
  \begin{lstlisting}
  async function fetchBill() {
      const billAmount = await contract.methods.getBill().call({ from: account });
      setBill(billAmount);
  }
- \end{lstlisting}
  
- To pay the bill using the `payBill` function:
- 
- \begin{lstlisting}
  async function payBill() {
      const billAmount = await contract.methods.getBill().call({ from: account });
      const tx = contract.methods.payBill();
@@ -869,46 +794,28 @@ The Internet has grown from a basic information-sharing platform to a global net
  \end{lstlisting}
  
  \section{Frontend Interface}
- The React frontend provides buttons to interact with the smart contract:
+ The React frontend allows users to interact with the contract through a simple UI:
  
- \begin{lstlisting}
- return (
-   <div className="container">
-     <h1>Energy Billing System</h1>
-     <p>Energy: {energy !== null ? `${energy} kWh` : "Fetching..."}</p>
-     <p>Bill: {bill !== null ? `${bill} wei` : "Not Fetched"}</p>
-     
-     <button onClick={sendEnergyData}>Store Energy</button>
-     <button onClick={fetchBill}>Fetch Bill</button>
-     <button onClick={payBill}>Pay Bill</button>
-   </div>
- );
- \end{lstlisting}
- The frontend allows seamless interaction with the smart contract, enabling users to track their energy consumption and settle their bills efficiently. The main interface of the React application is shown in Figure~\ref{fig:frontend_ui}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{web3 App.PNG}
-\caption{User interface of the Energy Billing System}
-\label{fig:frontend_ui}
-\end{figure}
-
-\section{Transaction Logs and User Interaction}
-To verify the proper execution of smart contract functions, transaction logs from the frontend interactions were analyzed. When a user stores energy data, retrieves the bill, or makes a payment, corresponding transactions are recorded on the blockchain. Figure~\ref{fig:frontend_transactions} presents a transaction log demonstrating these interactions.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{frontend Logs.PNG}
-\caption{Transaction log from frontend interactions with the smart contract}
-\label{fig:frontend_transactions}
-\end{figure}
-
-By integrating React with Web3.js, users can seamlessly communicate with the Ethereum blockchain, ensuring a smooth and responsive experience.
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=0.4\textwidth]{web3 App.PNG}
+ \caption{User interface of the Energy Billing System}
+ \label{fig:frontend_ui}
+ \end{figure}
+ 
+ \section{Transaction Logs}
+ Each smart contract interaction is recorded on the blockchain. The frontend logs these transactions for verification, as shown in Figure~\ref{fig:frontend_transactions}.
+ 
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{frontend Logs.PNG}
+ \caption{Transaction log from frontend interactions with the smart contract}
+ \label{fig:frontend_transactions}
+ \end{figure}
  
  \section{Conclusion}
- This Web3 application successfully integrates React, Ganache, and ThingsBoard to enable decentralized energy billing. It demonstrates the potential of blockchain for transparent and automated energy management.
-
-
+ This chapter demonstrated how blockchain and smart contracts can automate energy billing with transparency and security. By integrating Web3.js, React, and ThingsBoard, a decentralized billing system was developed that showcases the capabilities of Web3 in real-world applications.
+ 
  \chapter{Conclusion and Future Scope}
 
 This study highlights how combining IoT and smart energy management with home automation may revolutionize energy use, monitoring, and billing.  The system uses real-time data and automation to assure transparency, efficiency, and accuracy in energy monitoring and invoicing, making energy management more streamlined and cost-effective.

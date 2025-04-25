@@ -47,6 +47,23 @@ R.~A. Atmoko, R.~Riantini, and M.~K. Hasin, ``Iot real time data acquisition
   \url{https://dx.doi.org/10.1088/1742-6596/853/1/012003}
 \BIBentrySTDinterwordspacing
 
+\bibitem{10.1145/3328833.3328857}
+\BIBentryALTinterwordspacing
+M.~Abdelhamid and G.~Hassan, ``Blockchain and smart contracts,'' in
+  \emph{Proceedings of the 8th International Conference on Software and
+  Information Engineering}, ser. ICSIE '19.\hskip 1em plus 0.5em minus
+  0.4em\relax New York, NY, USA: Association for Computing Machinery, 2019, p.
+  91–95. [Online]. Available: \url{https://doi.org/10.1145/3328833.3328857}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Hu2018BlockchainbasedSC}
+\BIBentryALTinterwordspacing
+Y.~Hu, M.~Liyanage, A.~Mansoor, K.~Thilakarathna, G.~Jourjon, and A.~P.
+  Seneviratne, ``Blockchain-based smart contracts - applications and
+  challenges,'' \emph{arXiv: Computers and Society}, 2018. [Online]. Available:
+  \url{https://api.semanticscholar.org/CorpusID:182952419}
+\BIBentrySTDinterwordspacing
+
 \bibitem{julies}
 B.~D. Julies and T.~Zuva, ``A review on intenet of things smart homes,
   challenges, open issues and countermeasures,'' in \emph{Software Engineering
@@ -145,23 +162,6 @@ G.~Kaur, A.~Kaur, N.~Sharma, M.~Singh, and K.~Mittal, ``Evolution of ai in
   of Contemporary Technology}, vol.~6, no.~2, pp. 388--395, October 2024.
   [Online]. Available:
   \url{https://cgcijctr.com/download.php?file=C20240401_Evolution+of+AI+in+Smart+Home+Systems+A+Comprehensive+Review_Final.pdf}
-\BIBentrySTDinterwordspacing
-
-\bibitem{10.1145/3328833.3328857}
-\BIBentryALTinterwordspacing
-M.~Abdelhamid and G.~Hassan, ``Blockchain and smart contracts,'' in
-  \emph{Proceedings of the 8th International Conference on Software and
-  Information Engineering}, ser. ICSIE '19.\hskip 1em plus 0.5em minus
-  0.4em\relax New York, NY, USA: Association for Computing Machinery, 2019, p.
-  91–95. [Online]. Available: \url{https://doi.org/10.1145/3328833.3328857}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Hu2018BlockchainbasedSC}
-\BIBentryALTinterwordspacing
-Y.~Hu, M.~Liyanage, A.~Mansoor, K.~Thilakarathna, G.~Jourjon, and A.~P.
-  Seneviratne, ``Blockchain-based smart contracts - applications and
-  challenges,'' \emph{arXiv: Computers and Society}, 2018. [Online]. Available:
-  \url{https://api.semanticscholar.org/CorpusID:182952419}
 \BIBentrySTDinterwordspacing
 
 \bibitem{valov2020home}
@@ -280,44 +280,5 @@ R.~Johari, K.~Gupta, and A.~S. Parihar, ``Smart contracts in smart cities:
   and Communication Technologies (IICT-2020) Proceedings of International
   Conference on ICRIHE-2020, Delhi, India: IICT-2020}.\hskip 1em plus 0.5em
   minus 0.4em\relax Springer, 2021, pp. 359--367.
-
-\bibitem{aria2023influential}
-R.~Aria, N.~Archer, M.~Khanlari, and B.~Shah, ``Influential factors in the
-  design and development of a sustainable web3/metaverse and its
-  applications,'' \emph{Future Internet}, vol.~15, no.~4, p. 131, 2023.
-
-\bibitem{nabben2023web3}
-K.~Nabben, ``Web3 as ‘self-infrastructuring’: The challenge is how,''
-  \emph{Big Data \& Society}, vol.~10, no.~1, p. 20539517231159002, 2023.
-
-\bibitem{murray2023promise}
-A.~Murray, D.~Kim, and J.~Combs, ``The promise of a decentralized internet:
-  What is web3 and how can firms prepare?'' \emph{Business horizons}, vol.~66,
-  no.~2, pp. 191--202, 2023.
-
-\bibitem{tennakoon2023smart}
-D.~Tennakoon, Y.~Hua, and V.~Gramoli, ``Smart redbelly blockchain: Reducing
-  congestion for web3,'' in \emph{2023 IEEE International Parallel and
-  Distributed Processing Symposium (IPDPS)}.\hskip 1em plus 0.5em minus
-  0.4em\relax IEEE, 2023, pp. 940--950.
-
-\bibitem{sadowski2023expansive}
-J.~Sadowski and K.~Beegle, ``Expansive and extractive networks of web3,''
-  \emph{Big Data \& Society}, vol.~10, no.~1, p. 20539517231159629, 2023.
-
-\bibitem{cong2023inclusion}
-L.~W. Cong, K.~Tang, Y.~Wang, and X.~Zhao, ``Inclusion and democratization
-  through web3 and defi? initial evidence from the ethereum ecosystem,''
-  National Bureau of Economic Research Cambridge, MA, USA, Tech. Rep., 2023.
-
-\bibitem{lacity2023quiet}
-M.~Lacity, E.~Carmel, A.~G. Young, and T.~Roth, ``The quiet corner of web3 that
-  means business,'' \emph{MIT Sloan Management Review}, vol.~64, no.~3, 2023.
-
-\bibitem{wang2023novel}
-G.~Wang, R.~Qin, J.~Li, F.-Y. Wang, Y.~Gan, and L.~Yan, ``A novel dao-based
-  parallel enterprise management framework in web3 era,'' \emph{IEEE
-  Transactions on Computational Social Systems}, vol.~11, no.~1, pp. 839--848,
-  2023.
 
 \end{thebibliography}

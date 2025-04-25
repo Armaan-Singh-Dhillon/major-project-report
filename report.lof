@@ -1,26 +1,21 @@
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces System Workflow}}{8}{figure.caption.3}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Raspberry Pi 3 Schematic}}{15}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces ADC (MCP3208)}}{16}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Complete Schematic}}{17}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Arduino Uno}}{17}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Current Sensor}}{18}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Voltage Measurement Circuit}}{19}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces PowerFactor Measurement Circuit}}{19}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Complete Schematic of Smart Energy meter}}{20}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces System Workflow}}{13}{figure.caption.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces ThingsBoard's Home}}{26}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Device creation process in ThingsBoard}}{27}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Latest Telemetry after Publishing Data}}{29}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Dashboard Creation with ThingsBoard Widgets}}{30}{figure.caption.17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Raspberry Pi 3 Schematic}}{16}{figure.caption.5}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces ADC (MCP3208)}}{17}{figure.caption.6}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Complete Schematic}}{18}{figure.caption.7}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Arduino Uno}}{18}{figure.caption.8}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Current Sensor}}{19}{figure.caption.9}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Voltage Measurement Circuit}}{20}{figure.caption.10}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces PowerFactor Measurement Circuit}}{20}{figure.caption.11}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Complete Schematic of Smart Energy meter}}{21}{figure.caption.12}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces ThingsBoard's Home}}{27}{figure.caption.13}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Device creation process in ThingsBoard}}{28}{figure.caption.14}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Latest Telemetry after Publishing Data}}{30}{figure.caption.15}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Dashboard Creation with ThingsBoard Widgets}}{31}{figure.caption.17}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Gas Tracker for Ethereum Sepolia}}{37}{figure.caption.18}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Smart contract deployment in Remix IDE}}{37}{figure.caption.19}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces User interface of the Energy Billing System}}{42}{figure.caption.20}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Transaction log from frontend interactions with the smart contract}}{43}{figure.caption.21}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces User interface of the Energy Billing System}}{37}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Transaction log from frontend interactions with the smart contract}}{37}{figure.caption.19}%
 \addvspace {10\p@ }
