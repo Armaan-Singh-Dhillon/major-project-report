@@ -65,3 +65,5 @@
 \contentsline {section}{\numberline {5.8}Transaction Logs}{37}{section.5.8}%
 \contentsline {section}{\numberline {5.9}Conclusion}{38}{section.5.9}%
 \contentsline {chapter}{\numberline {6}Conclusion and Future Scope}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Conclusion}{39}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Future Scope}{39}{section.6.2}%

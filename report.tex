@@ -163,7 +163,7 @@ I would like to extend my sincere gratitude to my colleagues and seniors for the
 \newpage
 \chapter{Introduction}
 \section{Introduction}
-Home automation using Raspberry Pi has gained popularity due to its numerous advantages and cost-effectiveness. These systems provide users with the ability to control household appliances through local networks or remote access, thereby enhancing convenience and energy efficiency\cite{jain2014raspberry}. Modern home automation technologies offer features such as automatic meter reading, real-time monitoring, and remote control of electrical connections without the need for personal involvement\cite{chaudhari2017smart}. In addition to energy monitoring, home automation systems commonly include sensors, cameras, and web-based applications to increase security and enable comprehensive device control\cite{patchava2015smart}. The MQTT protocol, known for its lightweight and reliable messaging, is frequently used in IoT-based systems to improve data quality and communication reliability\cite{Atmoko_2017}.
+Home automation using Raspberry Pi has gained popularity due to its numerous advantages and cost-effectiveness. These systems provide users with the ability to control household appliances through local networks or remote access, thereby enhancing convenience and energy efficiency\cite{jain2014raspberry}. Modern home automation technologies offer features such as automatic meter reading, real-time monitoring, and remote control of electrical connections without the need for personal involvement\cite{chaudhari2017smart}. In addition to energy monitoring, home automation systems commonly include sensors, cameras, and web-based applications to increase security and enable comprehensive device control\cite{patchava2015smart}. The MQTT protocol, known for its lightweight and reliable messaging, is frequently used in IoT-based systems to improve data quality and communication reliability.
 
 Despite these developments, there are still certain limits in existing home automation options. Many systems continue to have insufficient encryption and access control, leaving them vulnerable to illegal access. Proprietary communication protocols and restricted integration possibilities further impede interoperability across devices from different manufacturers. Furthermore, extensive setup processes and non-intuitive user interfaces make it difficult for non-technical individuals to access and operate.
 
@@ -193,7 +193,7 @@ Real-time sensor data enables dynamic decision-making, allowing the system to re
 
 \section{Project Workflow}
 
-This section depicts the workflow of a smart home automation system that is coupled with blockchain for energy billing. The smart meter captures energy usage data, which is then transmitted to a cloud-based IoT platform for real-time monitoring\cite{jain2014raspberry}\cite{chaudhari2017smart}. Data is processed using MQTT and REST APIs to ensure reliability\cite{Atmoko_2017}.
+This section depicts the workflow of a smart home automation system that is coupled with blockchain for energy billing. The smart meter captures energy usage data, which is then transmitted to a cloud-based IoT platform for real-time monitoring\cite{jain2014raspberry}\cite{chaudhari2017smart}. Data is processed using MQTT and REST APIs to ensure reliability.
 
 A Web3 application obtains this information and communicates with an Ethereum smart contract to generate energy bills in a secure and transparent manner\cite{10.1145/3328833.3328857}\cite{Hu2018BlockchainbasedSC}. By merging IoT and blockchain, the solution automates billing and payments, increasing efficiency and security.
 
@@ -225,7 +225,7 @@ This process combines blockchain, cloud computing, and the Internet of Things to
 \chapter{Literature Survey}
 
 \section{Introduction}
-Smart home automation has become a vital part of modern living, offering benefits such as increased convenience, energy optimization, and enhanced security. With the advancement of Internet of Things (IoT) technologies, homes are now equipped with interconnected sensors, controllers, and cloud platforms that enable real-time automation and monitoring. However, as noted in numerous studies, the journey toward widespread adoption remains hindered by technical, financial, and usability-related challenges \cite{julies}\cite{Zhang2022TheCS}\cite{Ahmed02102021}.
+Smart home automation has become a vital part of modern living, offering benefits such as increased convenience, energy optimization, and enhanced security. With the advancement of Internet of Things (IoT) technologies, homes are now equipped with interconnected sensors, controllers, and cloud platforms that enable real-time automation and monitoring. However, as noted in numerous studies, the journey toward widespread adoption remains hindered by technical, financial, and usability-related challenges\cite{Zhang2022TheCS}\cite{Ahmed02102021}.
 
 While these technologies show promise, real-world implementations frequently fall short due to constraints such as inadequate device interoperability, security risks, a lack of customisation, and exorbitant installation costs.  Existing systems sometimes rely on closed ecosystems, further complicating integration and limiting user flexibility.  This chapter explores major literature in the field, identifies the primary barriers to smart home automation, and compares those results to our system's implementation, which uses Raspberry Pi, ThingsBoard, Docker, and real-time sensor-cloud connection.
 
@@ -242,13 +242,13 @@ Security breaches, data privacy issues, device incompatibilities, and poor user 
 Security in smart home automation is a serious concern raised in various research.  As the number of internet-connected gadgets grows, so does the attack surface for cyber attacks.  According to multiple sources, many IoT devices lack strong encryption and authentication, leaving them vulnerable to unauthorized access\cite{Venkatesh}\cite{mazid2023iot}.  Others raise worries about user data being collected or modified owing to inadequate or nonexistent privacy protections\cite{li2023let}.  Furthermore, the lack of common security methods across different manufacturers increases these risks\cite{Sobin_2020}\cite{holguin2023smart}.
 
 \subsection{Interoperability Issues}
-Interoperability refers to the ability of equipment from various vendors to communicate seamlessly.  According to research, many smart home systems fail to integrate effectively because they use proprietary communication protocols\cite{portales2019challenges}\cite{Sobin_2020}.  Incompatibility between platforms frequently causes users to rely on vendor-specific hubs or apps, resulting in a disjointed user experience.  This difficulty is exacerbated by the lack of globally accepted IoT standards\cite{holguin2023smart}.
+Interoperability refers to the ability of equipment from various vendors to communicate seamlessly.  According to research, many smart home systems fail to integrate effectively because they use proprietary communication protocols.Incompatibility between platforms frequently causes users to rely on vendor-specific hubs or apps, resulting in a disjointed user experience.  This difficulty is exacerbated by the lack of globally accepted IoT standards\cite{holguin2023smart}.
 
 \subsection{User Experience}
-Despite their functional potential, smart home systems can provide a terrible user experience.  According to studies, setup methods are typically technically complex, preventing non-expert users\cite{sita2024development}\cite{bai2024research}.  Other findings indicate that many systems fail to tailor interactions depending on user behavior, leaving automation seeming stiff and detached\cite{elmi2023interoperable}.  Furthermore, non-intuitive interfaces and a lack of transparency increase user irritation and slow adoption\cite{mare2019consumer}.
+Despite their functional potential, smart home systems can provide a terrible user experience.  According to studies, setup methods are typically technically complex, preventing non-expert users\cite{sita2024development}\cite{bai2024research}.  Other findings indicate that many systems fail to tailor interactions depending on user behavior, leaving automation seeming stiff and detached\cite{elmi2023interoperable}.  Furthermore, non-intuitive interfaces and a lack of transparency increase user irritation and slow adoption.
 
 \subsection{Energy Efficiency}
-Energy efficiency is usually highlighted as a significant motivator for smart home adoption, however research shows that many systems fall short of meeting this expectation.  Several studies address how real-time energy monitoring and management are underutilized due to the high system complexity\cite{sita2024development}.  Others point out that balancing user comfort with energy-saving automation is a continuing challenge\cite{Sobin_2020}\cite{elmi2023interoperable}, and that consumers frequently lack awareness into their own consumption habits\cite{kaur2024evolution}.
+Energy efficiency is usually highlighted as a significant motivator for smart home adoption, however research shows that many systems fall short of meeting this expectation.  Several studies address how real-time energy monitoring and management are underutilized due to the high system complexity\cite{sita2024development}.  Others point out that balancing user comfort with energy-saving automation is a continuing challenge\cite{elmi2023interoperable}, and that consumers frequently lack awareness into their own consumption habits\cite{kaur2024evolution}.
 
 
 
@@ -302,7 +302,7 @@ Proteus is a powerful software program that is commonly used to develop and simu
 
 The Raspberry Pi 3 serves as the core processing unit for the smart home automation system, which communicates with a variety of sensors such as Light Dependent Resistors (LDR), Passive Infrared (PIR) sensors, and gas detectors to automate household appliances.  The Raspberry Pi lacks built-in analog input capabilities, thus an external ADC (MCP3208) is used to interpret analog sensor data and enabling IoT-based automation\cite{valov2020home}.
 
-The smart energy meter focuses on real-time power consumption monitoring, incorporating an Arduino Uno for data acquisition, ACS712 current sensors for current measurement, and voltage dividers for accurate voltage monitoring \cite{li2010application}. Additionally, power factor measurement is achieved using LM358 operational amplifiers and XOR gates to analyze phase differences between voltage and current waveforms \cite{Khair_2017}. These measurements are transmitted to the IoT platform, enabling remote energy management and optimization.
+The smart energy meter focuses on real-time power consumption monitoring, incorporating an Arduino Uno for data acquisition, ACS712 current sensors for current measurement, and voltage dividers for accurate voltage monitoring. Additionally, power factor measurement is achieved using LM358 operational amplifiers and XOR gates to analyze phase differences between voltage and current waveforms. These measurements are transmitted to the IoT platform, enabling remote energy management and optimization.
 
 This chapter details the schematic design, component selection, and software implementation in Proteus.  The proposed system provides not just automation and remote monitoring, but also efficient energy utilization and billing.  Proteus simulations evaluate the system's many features prior to real-world deployment, ensuring reliability and performance.
 
@@ -320,7 +320,7 @@ The home automation circuit includes:
 \end{figure}
 
 
-\textbf{ADC (MCP3208):} Analog-to-digital converters (ADCs) transform analog signals into digital data, allowing microcontrollers and computers to process real-world inputs.The MCP3208 is a 12-bit ADC with 8 input channels. It provides high accuracy (±1 LSB DNL, ±1-2 LSB INL) and low power consumption.  It runs on 2.7V-5.5V, has an SPI interface, and is commonly used for sensor applications and data gathering\cite{Dout199927V41}.
+\textbf{ADC (MCP3208):} Analog-to-digital converters (ADCs) transform analog signals into digital data, allowing microcontrollers and computers to process real-world inputs.The MCP3208 is a 12-bit ADC with 8 input channels. It provides high accuracy (±1 LSB DNL, ±1-2 LSB INL) and low power consumption.  It runs on 2.7V-5.5V, has an SPI interface, and is commonly used for sensor applications and data gathering.
 
 \begin{figure}[H]  % 'h' places the figure approximately here
     \centering
@@ -358,9 +358,9 @@ The smart energy meter circuit consists of:
     \label{fig:uno} % Label for referencing the figure
 
 \end{figure}
-It has characteristics suited for power electronics applications, providing switching frequencies of up to 100 kHz with extra libraries\cite{muller2015using}.  The Arduino Uno has been shown to be effective in controlling industrial-scale instruments, performing similarly to industrial-class controllers that use PID algorithms\cite{Taufiq_2020}.The Arduino Uno, which is based on the Atmega328 processor, supports Assembly and C programming, allowing students to learn about microcontroller architecture and interact with real-world devices like LCDs, motors, and sensors\cite{Naimi2017TheAM}. 
+It has characteristics suited for power electronics applications, providing switching frequencies of up to 100 kHz with extra libraries\cite{muller2015using}.  The Arduino Uno has been shown to be effective in controlling industrial-scale instruments, performing similarly to industrial-class controllers that use PID algorithms\cite{Taufiq_2020}.
 
-\textbf{Current Measurement}:In our smart home automation project, we employ the ACS712 Hall-effect-based current sensor to monitor AC/DC power levels. It has low resistance (1.2 mohm) and 2.1 kVRMS isolation for precise and safe current measuring\cite{li2010application}. The 30A variant with 66mV/A sensitivity is integrated with an arduino uno, allowing for real-time power tracking and energy consumption analysis via ThingsBoard.  Calibration improves accuracy and reduces measurement error, making it ideal for IoT-based billing and automation systems.  Its rapid reaction (5 µs) and low noise improve performance for smart energy management\cite{Khair_2017}.
+\textbf{Current Measurement}:In our smart home automation project, we employ the ACS712 Hall-effect-based current sensor to monitor AC/DC power levels. It has low resistance (1.2 mohm) and 2.1 kVRMS isolation for precise and safe current measuring. The 30A variant with 66mV/A sensitivity is integrated with an arduino uno, allowing for real-time power tracking and energy consumption analysis via ThingsBoard.  Calibration improves accuracy and reduces measurement error, making it ideal for IoT-based billing and automation systems.  Its rapid reaction (5 µs) and low noise improve performance for smart energy management.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.35\textwidth]{ACS.PNG} % Adjust width as needed
@@ -515,12 +515,10 @@ The Proteus simulation offered a dependable testing environment for both the sma
 
 \chapter{ThingsBoard Integration}
 \section{Introduction to ThingsBoard}
-Rapid breakthroughs in semiconductor technology and wireless communication have resulted in the development of low-cost sensor-based devices, which serve as the foundation for the Internet of Things (IoT) ecosystem\cite{estrin1999next}.  These sensors produce massive volumes of data, demanding effective collection, processing, and management frameworks.  IoT platforms play an important role in managing this data by offering connectivity, security, data visualization, and analytics capabilities\cite{hammi2018iot}\cite{gazis2015survey}.  Among these platforms, ThingsBoard has emerged as an effective open-source solution for IoT data collecting and management.
+Rapid breakthroughs in semiconductor technology and wireless communication have resulted in the development of low-cost sensor-based devices, which serve as the foundation for the Internet of Things (IoT) ecosystem.  These sensors produce massive volumes of data, demanding effective collection, processing, and management frameworks.  IoT platforms play an important role in managing this data by offering connectivity, security, data visualization, and analytics capabilities\cite{hammi2018iot}.  Among these platforms, ThingsBoard has emerged as an effective open-source solution for IoT data collecting and management.
 
-ThingsBoard is a Java 8-based IoT platform that acts as a gateway for devices that communicate using MQTT\cite{kegenbekov2022using}, CoAP\cite{shelby2014rfc}, and HTTP\cite{yassein2016application}.  These protocols allow for lightweight communication between resource-constrained IoT devices and cloud services.  MQTT is a publish/subscribe protocol for small, low-power devices that enables efficient message exchange via a broker with varying Quality of Service (QoS) levels\cite{kegenbekov2022using}.  In contrast, CoAP is an UDP-based protocol designed for limited contexts, with lower overhead but lesser dependability than MQTT\cite{shelby2014rfc}.
-One of ThingsBoard's key features is the ability to build rules and plugins for message processing.  Rules contain data filters, metadata enrichment processors, and action triggers that change messages into new formats before sending them to plugins.  This rule-based system supports basic data processing, including threshold-based notifications.  However, the technology does not automatically support complex data aggregation over time or across several devices\cite{hammi2018iot}.
+ThingsBoard is a Java 8-based IoT platform that acts as a gateway for devices that communicate using MQTT\cite{kegenbekov2022using} and HTTP.  These protocols allow for lightweight communication between resource-constrained IoT devices and cloud services.  MQTT is a publish/subscribe protocol for small, low-power devices that enables efficient message exchange via a broker with varying Quality of Service (QoS) levels\cite{kegenbekov2022using}.  In contrast, CoAP is an UDP-based protocol designed for limited contexts, with lower overhead but lesser dependability than MQTT.One of ThingsBoard's key features is the ability to build rules and plugins for message processing.  Rules contain data filters, metadata enrichment processors, and action triggers that change messages into new formats before sending them to plugins.  This rule-based system supports basic data processing, including threshold-based notifications.  However, the technology does not automatically support complex data aggregation over time or across several devices\cite{hammi2018iot}.
 
- ThingsBoard allows you to configure alerts for both devices and assets, which improves real-time monitoring and event-based automation.  When aberrant situations are recognized, these alerts alert users or initiate automated replies.  Furthermore, the platform supports both lightweight communication protocols, such as MQTT and CoAP, and classic RESTful services\cite{shelby2014rfc}. 
 
  \begin{figure}[H]
     \centering
@@ -658,7 +656,7 @@ One of ThingsBoard's key features is the ability to build rules and plugins for 
  \chapter{Blockchain and Smart Contracts}
 
  \section{Introduction}
- Blockchain is a decentralized, transparent, and secure technology for managing digital transactions. It combines cryptography, peer-to-peer networks, and consensus mechanisms to ensure that data is immutable and fraud-resistant\cite{swan2016blockchain}\cite{tern2021survey}.Smart contracts, introduced by Ethereum in 2013, are self-executing contracts with code-defined terms. These remove the need for intermediaries and allow for efficient and secure automation of processes in industries such as finance, energy, and logistics\cite{yuan2018shadoweth}\cite{falazi2020smart}\cite{johari2021smart}.
+ Blockchain is a decentralized, transparent, and secure technology for managing digital transactions. It combines cryptography, peer-to-peer networks, and consensus mechanisms to ensure that data is immutable and fraud-resistant\cite{tern2021survey}.Smart contracts, introduced by Ethereum in 2013, are self-executing contracts with code-defined terms. These remove the need for intermediaries and allow for efficient and secure automation of processes in industries such as finance, energy, and logistics\cite{johari2021smart}.
  
  \section{Advantages}
  Blockchain enables decentralization, immutability, and transparency.  Its distributed architecture eliminates single points of failure and enables tamper-proof, cryptographically secure data.  Smart contracts increase efficiency by enforcing logic directly on-chain, decreasing dependency on third parties.
@@ -818,13 +816,23 @@ One of ThingsBoard's key features is the ability to build rules and plugins for 
  
  \chapter{Conclusion and Future Scope}
 
-This study highlights how combining IoT and smart energy management with home automation may revolutionize energy use, monitoring, and billing.  The system uses real-time data and automation to assure transparency, efficiency, and accuracy in energy monitoring and invoicing, making energy management more streamlined and cost-effective.
+ \section{Conclusion}
+ This study highlights the potential of integrating IoT and smart energy management within home automation systems to transform energy use, monitoring, and billing. By leveraging real-time data and automation, the proposed system ensures transparency, efficiency, and accuracy, leading to more streamlined and cost-effective energy management. The system’s ability to monitor and manage energy usage dynamically paves the way for optimized billing and enhanced user experience in smart home environments.
  
-Building on this foundation, the suggested smart home automation system can be greatly improved by using new technology.  One interesting possibility is the integration of smart grid capabilities, which allows households to exchange excess solar energy within a local network.  This peer-to-peer energy sharing approach encourages sustainable living while increasing overall energy efficiency.
+ \section{Future Scope}
+ Building on the current study, there are several opportunities to enhance the proposed system and further push the boundaries of smart home automation for energy management:
  
-Additional advances include the implementation of demand-response systems, which alter energy usage based on real-time grid circumstances, resulting in improved load control and less energy waste.  Furthermore, combining solar energy and smart water pumping technologies can help to create a more self-sufficient household ecosystem.  Solar panel monitoring would enable precise assessment of energy generation and automated distribution to home appliances, while intelligent water pumps could regulate consumption based on supply and demand.
+ \begin{itemize}
+     \item \textbf{Smart Grid Integration}: Future work could explore the integration of smart grid capabilities, enabling households to share excess solar energy within a local network. This peer-to-peer energy sharing model could encourage sustainable living and improve overall energy efficiency.
+     
+     \item \textbf{Demand-Response Systems}: The system could be expanded with demand-response capabilities, which would dynamically adjust energy usage based on real-time grid conditions. This would improve load control and reduce energy waste, benefiting both consumers and the broader energy grid.
+     
+     \item \textbf{Solar Energy and Smart Water Pumping}: Incorporating solar energy generation monitoring and intelligent water pumping systems could create a more self-sufficient household ecosystem. This would optimize energy distribution to appliances and regulate water consumption based on available energy, promoting greater efficiency.
+     
+     \item \textbf{Hardware Upgrades}: Moving to more powerful microcontrollers, such as the ESP32 or other advanced IoT-enabled devices, would significantly improve the system’s performance. These devices would offer greater computational power, reduced energy consumption, and enhanced connectivity, making the system more scalable and suited for real-time applications.
+ \end{itemize}
  
-Another area for improvement is updating the hardware infrastructure.  Switching to more powerful microcontrollers, such as the ESP32 or other IoT-enabled devices, can greatly improve performance.  These devices outperform the Raspberry Pi in terms of computing power, energy consumption, and built-in connection, making them ideal for real-time and scalable IoT applications.
+ These future enhancements could significantly improve the system's functionality, making smart home automation even more efficient, sustainable, and scalable.
  
  
  

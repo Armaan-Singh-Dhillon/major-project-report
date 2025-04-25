@@ -39,14 +39,6 @@ V.~Patchava, H.~B. Kandala, and P.~R. Babu, ``A smart home automation technique
   smart sensors and systems (IC-SSS)}.\hskip 1em plus 0.5em minus 0.4em\relax
   IEEE, 2015, pp. 1--4.
 
-\bibitem{Atmoko_2017}
-\BIBentryALTinterwordspacing
-R.~A. Atmoko, R.~Riantini, and M.~K. Hasin, ``Iot real time data acquisition
-  using mqtt protocol,'' \emph{Journal of Physics: Conference Series}, vol.
-  853, no.~1, p. 012003, may 2017. [Online]. Available:
-  \url{https://dx.doi.org/10.1088/1742-6596/853/1/012003}
-\BIBentrySTDinterwordspacing
-
 \bibitem{10.1145/3328833.3328857}
 \BIBentryALTinterwordspacing
 M.~Abdelhamid and G.~Hassan, ``Blockchain and smart contracts,'' in
@@ -63,13 +55,6 @@ Y.~Hu, M.~Liyanage, A.~Mansoor, K.~Thilakarathna, G.~Jourjon, and A.~P.
   challenges,'' \emph{arXiv: Computers and Society}, 2018. [Online]. Available:
   \url{https://api.semanticscholar.org/CorpusID:182952419}
 \BIBentrySTDinterwordspacing
-
-\bibitem{julies}
-B.~D. Julies and T.~Zuva, ``A review on intenet of things smart homes,
-  challenges, open issues and countermeasures,'' in \emph{Software Engineering
-  Perspectives in Intelligent Systems}, R.~Silhavy, P.~Silhavy, and
-  Z.~Prokopova, Eds.\hskip 1em plus 0.5em minus 0.4em\relax Cham: Springer
-  International Publishing, 2020, pp. 1073--1089.
 
 \bibitem{Zhang2022TheCS}
 B.~Zhang and Y.~Zhang, ``The current situation and future challenges of smart
@@ -111,16 +96,6 @@ I.~Holguin and S.~Errapotu, ``Smart home iot communication protocols and
   International Conference on Cyber Security and Networking (CSNet)}, pp.
   208--211, October 2023.
 
-\bibitem{portales2019challenges}
-\BIBentryALTinterwordspacing
-C.~Portalés, S.~Casas, and K.~Kreuzer, ``Challenges and trends in home
-  automation: Addressing the interoperability problem with the open-source
-  platform openhab,'' in \emph{Harnessing the Internet of Everything (IoE) for
-  Accelerated Innovation Opportunities}.\hskip 1em plus 0.5em minus 0.4em\relax
-  IGI Global, 2019, pp. 148--174. [Online]. Available:
-  \url{https://www.igi-global.com/chapter/challenges-and-trends-in-home-automation/291662}
-\BIBentrySTDinterwordspacing
-
 \bibitem{sita2024development}
 I.~V. Sita and B.~David, ``Development and implementation of a comprehensive
   smart home automation system using home assistant and iot devices,'' in
@@ -145,16 +120,6 @@ Y.~A. Elmi, ``Interoperable iot devices and systems for smart homes: A data
   \url{https://dreamjournal.my/index.php/DREAM/article/view/195}
 \BIBentrySTDinterwordspacing
 
-\bibitem{mare2019consumer}
-\BIBentryALTinterwordspacing
-S.~Mare, L.~Girvin, F.~Roesner, and T.~Kohno, ``Consumer smart homes: Where we
-  are and where we need to go,'' in \emph{Proceedings of the 20th International
-  Workshop on Mobile Computing Systems and Applications (HotMobile '19)}.\hskip
-  1em plus 0.5em minus 0.4em\relax Santa Cruz, CA, USA: ACM, Feb. 2019, pp.
-  117--122. [Online]. Available:
-  \url{https://dl.acm.org/doi/10.1145/3301293.3302371}
-\BIBentrySTDinterwordspacing
-
 \bibitem{kaur2024evolution}
 \BIBentryALTinterwordspacing
 G.~Kaur, A.~Kaur, N.~Sharma, M.~Singh, and K.~Mittal, ``Evolution of ai in
@@ -169,26 +134,6 @@ N.~Valov and I.~Valova, ``Home automation system with raspberry pi,'' in
   \emph{2020 7th International Conference on Energy Efficiency and Agricultural
   Engineering (EE\&AE)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2020, pp.
   1--5.
-
-\bibitem{li2010application}
-L.~Li, Y.~Chen, J.~Liu \emph{et~al.}, ``The application of hall sensors acs712
-  in the protection circuit of controller for humanoid robots,'' in \emph{2010
-  International Conference on Computer Application and System Modeling (ICCASM
-  2010)}, vol.~12.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp.
-  V12--101.
-
-\bibitem{Khair_2017}
-\BIBentryALTinterwordspacing
-U.~Khair, A.~J. Lubis, I.~Agustha, Dharmawati, and M.~Zulfin, ``Modeling and
-  simulation of electrical prevenion system using arduino uno,gsm modem, and
-  acs712 current sensor,'' \emph{Journal of Physics: Conference Series}, vol.
-  930, no.~1, p. 012049, dec 2017. [Online]. Available:
-  \url{https://dx.doi.org/10.1088/1742-6596/930/1/012049}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Dout199927V41}
-C.~Dout, ``2.7v 4-channel/8-channel 12-bit a/d converters with spi
-  {\textregistered} serial interface,'' 1999.
 
 \bibitem{Flurry2021}
 \BIBentryALTinterwordspacing
@@ -212,67 +157,19 @@ A.~J. Taufiq, I.~H. Kurniawan, and T.~A.~Y. Nugraha, ``Analysis of arduino uno
   \url{https://dx.doi.org/10.1088/1757-899X/771/1/012015}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Naimi2017TheAM}
-S.~Naimi, S.~Naimi, and M.~A. Mazidi, ``The avr microcontroller and embedded
-  systems using assembly and c: Using arduino uno and atmel studio,'' 2017.
-
-\bibitem{estrin1999next}
-D.~Estrin, R.~Govindan, J.~Heidemann, and S.~Kumar, ``Next century challenges:
-  Scalable coordination in sensor networks,'' in \emph{Proceedings of the 5th
-  annual ACM/IEEE international conference on Mobile computing and networking},
-  1999, pp. 263--270.
-
 \bibitem{hammi2018iot}
-B.~Hammi, R.~Khatoun, S.~Zeadally, A.~Fayad, and L.~Khoukhi, ``Iot
-  technologies<? show [aq id= q1]?> for smart cities,'' \emph{IET networks},
-  vol.~7, no.~1, pp. 1--13, 2018.
-
-\bibitem{gazis2015survey}
-V.~Gazis, M.~G{\"o}rtz, M.~Huber, A.~Leonardi, K.~Mathioudakis, A.~Wiesmaier,
-  F.~Zeiger, and E.~Vasilomanolakis, ``A survey of technologies for the
-  internet of things,'' in \emph{2015 international wireless communications and
-  mobile computing conference (IWCMC)}.\hskip 1em plus 0.5em minus 0.4em\relax
-  IEEE, 2015, pp. 1090--1095.
+B.~Hammi, R.~Khatoun, S.~Zeadally, A.~Fayad, and L.~Khoukhi, ``Iot technologies
+  for smart cities,'' \emph{IET networks}, vol.~7, no.~1, pp. 1--13, 2018.
 
 \bibitem{kegenbekov2022using}
 Z.~Kegenbekov and A.~Saparova, ``Using the mqtt protocol to transmit vehicle
   telemetry data,'' \emph{Transportation Research Procedia}, vol.~61, pp.
   410--417, 2022.
 
-\bibitem{shelby2014rfc}
-Z.~Shelby, K.~Hartke, and C.~Bormann, ``Rfc 7252: The constrained application
-  protocol (coap),'' 2014.
-
-\bibitem{yassein2016application}
-M.~B. Yassein, M.~Q. Shatnawi \emph{et~al.}, ``Application layer protocols for
-  the internet of things: A survey,'' in \emph{2016 International Conference on
-  Engineering \& MIS (ICEMIS)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
-  2016, pp. 1--4.
-
-\bibitem{swan2016blockchain}
-M.~Swan, ``Blockchain temporality: Smart contract time specifiability with
-  blocktime,'' in \emph{Rule Technologies. Research, Tools, and Applications:
-  10th International Symposium, RuleML 2016, Stony Brook, NY, USA, July 6-9,
-  2016. Proceedings 10}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2016,
-  pp. 184--196.
-
 \bibitem{tern2021survey}
 S.~Tern, ``Survey of smart contract technology and application based on
   blockchain,'' \emph{Open Journal of Applied Sciences}, vol.~11, no.~10, pp.
   1135--1148, 2021.
-
-\bibitem{yuan2018shadoweth}
-R.~Yuan, Y.-B. Xia, H.-B. Chen, B.-Y. Zang, and J.~Xie, ``Shadoweth: Private
-  smart contract on public blockchain,'' \emph{Journal of Computer Science and
-  Technology}, vol.~33, pp. 542--556, 2018.
-
-\bibitem{falazi2020smart}
-G.~Falazi, U.~Breitenb{\"u}cher, F.~Daniel, A.~Lamparelli, F.~Leymann, and
-  V.~Yussupov, ``Smart contract invocation protocol (scip): A protocol for the
-  uniform integration of heterogeneous blockchain smart contracts,'' in
-  \emph{Advanced Information Systems Engineering: 32nd International
-  Conference, CAiSE 2020, Grenoble, France, June 8--12, 2020, Proceedings
-  32}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2020, pp. 134--149.
 
 \bibitem{johari2021smart}
 R.~Johari, K.~Gupta, and A.~S. Parihar, ``Smart contracts in smart cities:
